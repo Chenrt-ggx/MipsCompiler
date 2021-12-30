@@ -1,0 +1,61 @@
+int src[20];
+
+void quickSort(int l, int r) {
+	if (l > r) return;
+	int mid = (l + r) / 2;
+	if (src[l] > src[r]) {
+		int k = src[l];
+		src[l] = src[r];
+		src[r] = k;
+	}
+	if (src[r] < src[mid]) {
+		int k = src[r];
+		src[r] = src[mid];
+		src[mid] = k;
+	}
+	if (src[l] < src[mid]) {
+		int k = src[l];
+		src[l] = src[mid];
+		src[mid] = k;
+	}
+	int i = l, j = r, tmp = src[l];
+	while (i != j) {
+		while (src[j] >= tmp && i < j) j = j - 1;
+		while (src[i] <= tmp && i < j) i = i + 1;
+		if (i < j) {
+			int k = src[i];
+			src[i] = src[j];
+			src[j] = k;
+		}
+	}
+	src[l] = src[i];
+	src[i] = tmp;
+	mid = j;
+	j = i;
+	while (i >= l && src[i] == src[mid]) i = i - 1;
+	while (j <= r && src[j] == src[mid]) j = j + 1;
+	quickSort(l, i);
+	quickSort(j, r);
+}
+
+int main() {
+	int i = 0;
+	while (i < 20) {
+		src[i] = 20 - i;
+		i = i + 1;
+	}
+	i = 0;
+	while (i < 20) {
+		printf("%d ", src[i]);
+		i = i + 1;
+	}
+	printf("\n");
+	quickSort(0, 19);
+	i = 0;
+	while (i < 20) {
+		printf("%d ", src[i]);
+		i = i + 1;
+	}
+	printf("\n");
+	return 0;
+}

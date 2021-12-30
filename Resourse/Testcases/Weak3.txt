@@ -1,0 +1,13 @@
+int fibo(int x) {
+	if (x < 2) return x;
+	return fibo(x - 1) + fibo(x - 2);
+}
+
+int main() {
+	int i = 2;
+	while (i < 10) {
+		printf("%d -> %d\n", i, fibo(i));
+		i = i + 1;
+	}
+	return 0;
+}

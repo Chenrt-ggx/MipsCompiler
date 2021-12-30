@@ -1,0 +1,39 @@
+int determinant(int in[][5], int n) {
+	if (n == 1) return in[0][0];
+	int ans = 0, i = 0, tmp[5][5];
+	while (i < n) {
+		int j = 0;
+		while (j < n - 1) {
+			int k = 0;
+			while (k < n - 1) {
+				if (k < i) tmp[j][k] = in[j + 1][k];
+				else tmp[j][k] = in[j + 1][k + 1];
+				k = k + 1;
+			}
+			j = j + 1;
+		}
+		int l = determinant(tmp, n - 1);
+		if (i % 2) ans = ans - in[0][i] * l;
+		else ans = ans + in[0][i] * l;
+		i = i + 1;
+	}
+	return ans;
+}
+
+int main() {
+	int i = 0;
+	int arr[5][5];
+	int cur = 114514;
+	while (i < 5) {
+		int j = 0;
+		while (j < 5) {
+			cur = cur * 19260817 + 2333;
+			arr[i][j] = cur % 10 + 1;
+			j = j + 1;
+		}
+		i = i + 1;
+	}
+	/* 34808 */
+	printf("%d\n", determinant(arr, 5));
+	return 0;
+}

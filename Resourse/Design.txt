@@ -1,0 +1,187 @@
+--created/done/checked--> CompUnit -> {ConstDecl | VarDecl} {FuncDef} MainFuncDef
+
+--created/done/checked--> ConstDecl -> 'const' 'int' ConstDef { ',' ConstDef } ';'
+
+--created/done/checked--> ConstDef -> Ident { '[' ConstExp ']' } '=' ConstInitVal
+
+--created/done/checked--> ConstInitVal -> ConstExp | '{' [ ConstInitVal { ',' ConstInitVal } ] '}'
+
+--created/done/checked--> VarDecl -> 'int' VarDef { ',' VarDef } ';'
+
+--created/done/checked--> VarDef -> Ident { '[' ConstExp ']' } [ '=' InitVal ]
+
+--created/done/checked--> InitVal -> Exp | '{' [ InitVal { ',' InitVal } ] '}'
+
+--created/done/checked--> FuncDef -> FuncType Ident '(' [FuncFParams] ')' Block
+
+--created/done/checked--> MainFuncDef -> 'int' 'main' '(' ')' Block
+
+--created/done/checked--> FuncType -> 'void' | 'int'
+
+--created/done/checked--> FuncFParams -> FuncFParam { ',' FuncFParam }
+
+--created/done/checked--> FuncFParam -> 'int' Ident ['[' ']' { '[' ConstExp ']' }]
+
+--created/done/checked--> Block -> '{' { ConstDecl | VarDecl | Stmt } '}'
+
+--created/done/checked--> Stmt -> Block
+    | 'if' '(' Cond ')' Stmt [ 'else' Stmt ]
+    | 'while' '(' Cond ')' Stmt
+    | 'break' ';' | 'continue' ';'
+    | 'return' ';' | 'return' Exp ';'
+    | 'printf' '(' FormatString { ',' Exp } ')' ';'
+    | LVal '=' Exp ';'
+    | LVal '=' 'getint' '(' ')' ';'
+    | ';' | Exp ';'
+
+--created/done/checked--> Exp -> AddExp
+
+--created/done/checked--> Cond -> LOrExp
+
+--created/done/checked--> LVal -> Ident { '[' Exp ']'}
+
+--created/done/checked--> PrimaryExp -> '(' Exp ')' | LVal | Number
+
+--created/done/checked--> Number -> IntConst
+
+--created/done/checked--> UnaryExp -> PrimaryExp | Ident '(' [FuncRParams] ')' | UnaryOp UnaryExp
+
+--created/done/checked--> UnaryOp -> '+' | '−' | '!'
+
+--created/done/checked--> FuncRParams -> Exp { ',' Exp }
+
+--created/done/checked--> MulExp -> UnaryExp { ('*' | '/' | '%') UnaryExp}
+
+--created/done/checked--> AddExp -> MulExp { ('+' | '−') MulExp}
+
+--created/done/checked--> RelExp -> AddExp { ('<' | '>' | '<=' | '>=') AddExp}
+
+--created/done/checked--> EqExp -> RelExp { ('==' | '!=') RelExp}
+
+--created/done/checked--> LAndExp -> EqExp { '&&' EqExp}
+
+--created/done/checked--> LOrExp -> LAndExp { '||' LAndExp}
+
+--created/done/checked--> ConstExp -> AddExp
+
+// ------------------------------------------------------------------------
+
+--created/done/checked--> RootNode -> {ConstDefNode} {VarDefNode} {FuncDefNode} FuncDefNode
+
+--created/done/checked--> ConstDefNode -> {Integer} /* as dimension */ Integer /* as init */
+
+--created/done/checked--> VarDefNode -> {Integer} /* as dimension */ {AddExpNode} /* as init */
+
+--created/done/checked--> FuncDefNode -> {FParamNode} BlockNode
+
+--created/done/checked--> FParamNode -> {Integer} /* as dimension */
+
+--created/done/checked--> BlockNode -> {ConstDefNode | VarDefNode | BlockNode
+    | ConditionNode | LoopNode | BreakNode | ContinueNode
+    | ReturnNode | PrintNode | AssignNode | AddExpNode}
+
+--created/done/checked--> UnaryExpNode -> FuncCallNode | UnaryExpNode
+    | AddExpNode | LValNode | ValueNode
+
+--created/done/checked--> ConditionNode -> LOrExpNode /* for condition */
+    BlockNode | ConditionNode | LoopNode | BreakNode |
+    ContinueNode | ReturnNode | PrintNode | AssignNode | AddExpNode /* for then */
+    [BlockNode | ConditionNode | LoopNode | BreakNode |
+    ContinueNode | ReturnNode | PrintNode | AssignNode | AddExpNode] /* for else */
+
+--created/done/checked--> LoopNode -> LOrExpNode /* for condition */
+    BlockNode | ConditionNode | LoopNode | BreakNode |
+    ContinueNode | ReturnNode | PrintNode | AssignNode | AddExpNode
+
+--created/done/checked--> BreakNode -> /* none */
+
+--created/done/checked--> ContinueNode -> /* none */
+
+--created/done/checked--> ReturnNode -> [AddExpNode]
+
+--created/done/checked--> PrintNode -> {AddExpNode}
+
+--created/done/checked--> AssignNode -> LValNode [AddExpNode]
+
+--created/done/checked--> FuncCallNode -> {AddExpNode}
+
+--created/done/checked--> LValNode -> {AddExpNode} /* as dimension */
+
+--created/done/checked--> ValueNode -> /* none */
+
+--created/done/checked--> MulExpNode -> {UnaryExpNode} UnaryExpNode
+
+--created/done/checked--> AddExpNode -> {MulExpNode} MulExpNode
+
+--created/done/checked--> RelExpNode -> {AddExpNode} AddExpNode
+
+--created/done/checked--> EqExpNode -> {RelExpNode} RelExpNode
+
+--created/done/checked--> LAndExpNode -> {EqExpNode} EqExpNode
+
+--created/done/checked--> LOrExpNode -> {LAndExpNode} LAndExpNode
+
+// ------------------------------------------------------------------------
+
+--created/done/checked--> 格式字符串有⾮法字符              a        报错⾏号为<FormatString>所在⾏号
+
+--created/done/checked--> 函数或变量名重复定义              b        报错⾏号为<Ident>所在⾏号
+
+--created/done/checked--> 使⽤未定义的标识符                c        报错⾏号为<Ident>所在⾏号
+
+--created/done/checked--> 函数参数个数不匹配                d        报错⾏号为调⽤语句的函数名所在⾏号
+
+--created/done/checked--> 函数参数类型不匹配                e        报错⾏号为调⽤语句的函数名所在⾏号
+
+--created/done/checked--> ⽆返回值函数return不匹配          f        报错⾏号为return所在⾏号
+
+--created/done/checked--> 有返回值函数末尾无return          g        报错⾏号为函数结尾的'}'所在⾏号
+
+--created/done/checked--> 不能改变常量的值                  h        报错⾏号为LVal所在⾏号
+
+--created/done/checked--> 定义或语句缺少分号                i        报错⾏号为分号前⼀⾮终结符所在⾏号
+
+--created/done/checked--> 缺少右侧⼩括号                    j        报错⾏号为右⼩括号前⼀个⾮终结符所在⾏号
+
+--created/done/checked--> 缺少右侧中括号                    k        报错⾏号为右中括号前⼀个⾮终结符所在⾏号
+
+--created/done/checked--> printf中格式字符数不匹配          l        报错⾏号为printf所在⾏号
+
+--created/done/checked--> ⾮循环块中使⽤break/continue      m        报错⾏号为break/continue所在⾏号
+
+// ------------------------------------------------------------------------
+
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         bnz     src tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         bne     src1 src2 tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         beq     src1 src2 tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         bgez    src tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         bgtz    src tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         blez    src tag1 tag2
+--created/done/checked--> BnzElement -> BranchElement -> AbstractElement         bltz    src tag1 tag2
+
+--created/done/checked--> AddElement -> CalculateElement -> AbstractElement      add     dst src1 src2
+--created/done/checked--> SubElement -> CalculateElement -> AbstractElement      sub     dst src1 src2
+--created/done/checked--> MulElement -> CalculateElement -> AbstractElement      mul     dst src1 src2
+--created/done/checked--> DivElement -> CalculateElement -> AbstractElement      div     dst src1 src2
+--created/done/checked--> ModElement -> CalculateElement -> AbstractElement      mod     dst src1 src2
+--created/done/checked--> ModElement -> CalculateElement -> AbstractElement      sll     dst src1 src2
+--created/done/checked--> SeqElement -> CalculateElement -> AbstractElement      seq     dst src1 src2
+--created/done/checked--> SneElement -> CalculateElement -> AbstractElement      sne     dst src1 src2
+--created/done/checked--> SgeElement -> CalculateElement -> AbstractElement      sgt     dst src1 src2
+--created/done/checked--> SgtElement -> CalculateElement -> AbstractElement      sge     dst src1 src2
+--created/done/checked--> SleElement -> CalculateElement -> AbstractElement      slt     dst src1 src2
+--created/done/checked--> SltElement -> CalculateElement -> AbstractElement      sle     dst src1 src2
+
+--created/done/checked--> LoadElement -> MemoryElement -> AbstractElement        load    dst addr none
+--created/done/checked--> StoreElement -> MemoryElement -> AbstractElement       store   dst addr none
+--created/done/checked--> AllocElement -> MemoryElement -> AbstractElement       alloc   dst size none
+
+--created/done/checked--> DeclElement -> SimpleElement -> AbstractElement        decl    var none none
+--created/done/checked--> ScanElement -> SimpleElement -> AbstractElement        scan    dst none none
+--created/done/checked--> PutStrElement -> SimpleElement -> AbstractElement      puts    dst none none
+--created/done/checked--> PutNumElement -> SimpleElement -> AbstractElement      putn    dst none none
+--created/done/checked--> JumpElement -> SimpleElement -> AbstractElement        jmp     tag none none
+--created/done/checked--> TagElement -> SimpleElement -> AbstractElement         tag     tag none none
+--created/done/checked--> ParamElement -> SimpleElement -> AbstractElement       push    src none none
+--created/done/checked--> CallElement -> SimpleElement -> AbstractElement        call    fun none none
+--created/done/checked--> ExitElement -> SimpleElement -> AbstractElement        exit    dst none none

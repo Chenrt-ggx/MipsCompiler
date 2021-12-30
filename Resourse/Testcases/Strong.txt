@@ -1,0 +1,1508 @@
+int data[300] = {
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        2147483647,
+        -2147483648,
+        2147483646,
+        -2147483647,
+        2147483645,
+        -2147483646,
+        2147483644,
+        -2147483645,
+        2147483643,
+        -2147483644,
+        1,
+        -2,
+        2,
+        -3,
+        4,
+        -5,
+        8,
+        -9,
+        16,
+        -17,
+        32,
+        -33,
+        64,
+        -65,
+        128,
+        -129,
+        256,
+        -257,
+        512,
+        -513,
+        1024,
+        -1025,
+        2048,
+        -2049,
+        4096,
+        -4097,
+        8192,
+        -8193,
+        16384,
+        -16385,
+        32768,
+        -32769,
+        65536,
+        -65537,
+        131072,
+        -131073,
+        262144,
+        -262145,
+        524288,
+        -524289,
+        1048576,
+        -1048577,
+        2097152,
+        -2097153,
+        4194304,
+        -4194305,
+        8388608,
+        -8388609,
+        16777216,
+        -16777217,
+        33554432,
+        -33554433,
+        67108864,
+        -67108865,
+        134217728,
+        -134217729,
+        268435456,
+        -268435457,
+        536870912,
+        -536870913,
+        1073741824,
+        -1073741825,
+        -2147483648,
+        2147483647,
+        1028,
+        -33554945,
+        201326592,
+        -1082130433,
+        526336,
+        -131074,
+        17039360,
+        -134218753,
+        33556480,
+        -269484033,
+        2,
+        -67141633,
+        134742016,
+        -50331649,
+        1536,
+        -81,
+        2621440,
+        -268435473,
+        2113536,
+        -16777249,
+        -1073741824,
+        -4,
+        8196,
+        -1073741825,
+        541065216,
+        -32773,
+        1056,
+        -1048593,
+        8396800,
+        -134219777,
+        67109120,
+        2147483647,
+        8388609,
+        -67108873,
+        393216,
+        -262657,
+        528,
+        -66,
+        -2013265920,
+        2147483645,
+        268435584,
+        -4210689,
+        -1598623456,
+        7301,
+        -8,
+        -913094563,
+        942,
+        4,
+        1476512371,
+        10225,
+        71,
+        -1925757403,
+        8964,
+        -26,
+        -628850884,
+        9565,
+        -86,
+        -550176260,
+        9174,
+        47,
+        -967918919,
+        30481,
+        -48,
+        686554515,
+        -9037,
+        29,
+        2127646236,
+        -6025,
+        86,
+        1841761445,
+        -17730,
+        -68,
+        604747407,
+        27749,
+        23,
+        -1799999611,
+        -25155,
+        73,
+        -449588718,
+        6248,
+        -55,
+        53778227,
+        30424,
+        41,
+        -140130876,
+        -12566,
+        6,
+        1833369954,
+        21244,
+        -82,
+        -1926644112,
+        -31116,
+        9,
+        -340271351,
+        5082,
+        97,
+        1148221796,
+        -29044,
+        16,
+        794979786,
+        17468,
+        -5,
+        -1488111140,
+        31521,
+        28,
+        1904118577,
+        -22789,
+        -70,
+        -1664404202,
+        -26841,
+        -61,
+        1433960600,
+        -22266,
+        -89,
+        -1147168446,
+        11072,
+        -54,
+        -220289303,
+        13848,
+        95,
+        -1883755423,
+        11976,
+        59,
+        -107423816,
+        26157,
+        123,
+        -1694784290,
+        -22847,
+        -128,
+        132064,
+        -33551872,
+        33521792,
+        -134217666,
+        -1073743873,
+        -570425328,
+        2097409,
+        -28673,
+        4177904,
+        -7340036,
+        -127,
+        62914496,
+        66847744,
+        -1572880,
+        -2099200,
+        301981696,
+        4714496,
+        -524792,
+        2096896,
+        519680,
+        -536870909,
+        67248128,
+        33522176,
+        -4196288,
+        33562620,
+        -535822332,
+        -36,
+        133693376,
+        -1073737984,
+        142606328,
+        2097656,
+        -33550336,
+        -67116800,
+        1073741700,
+        129088,
+        2031680,
+        540736,
+        -66847744,
+        16792576,
+        -134152064,
+        -134214144,
+        -64,
+        114560,
+        7169,
+        2097407,
+        -2143322112,
+        -1046526,
+        -33814528,
+        -33553922,
+        258040,
+        1308672,
+        33686016,
+        -267911169,
+        268369918,
+        -536871392,
+        1049536,
+        16768768,
+        -2143289376,
+        541065280,
+        545259648,
+        1179632,
+        33292286,
+        24577,
+        134152196,
+        -489472,
+        119,
+        -118784,
+        -4129792,
+        98288,
+        134215688,
+        -3940352,
+        8388472,
+        -16711679,
+        -536805120,
+        1556480,
+        1073774608,
+        34603006,
+        -2097080,
+        117440528,
+        -67107072,
+};
+
+int main() {
+        int i = 0, n = 300;
+        while (i < n) {
+                printf("%d * -8 = %d\n", data[i], -8, data[i] * -8);
+                printf("%d / -8 = %d\n", data[i], -8, data[i] / -8);
+                printf("%d % -8 = %d\n", data[i], -8, data[i] % -8);
+
+                printf("%d * -7 = %d\n", data[i], -7, data[i] * -7);
+                printf("%d / -7 = %d\n", data[i], -7, data[i] / -7);
+                printf("%d % -7 = %d\n", data[i], -7, data[i] % -7);
+
+                printf("%d * -6 = %d\n", data[i], -6, data[i] * -6);
+                printf("%d / -6 = %d\n", data[i], -6, data[i] / -6);
+                printf("%d % -6 = %d\n", data[i], -6, data[i] % -6);
+
+                printf("%d * -5 = %d\n", data[i], -5, data[i] * -5);
+                printf("%d / -5 = %d\n", data[i], -5, data[i] / -5);
+                printf("%d % -5 = %d\n", data[i], -5, data[i] % -5);
+
+                printf("%d * -4 = %d\n", data[i], -4, data[i] * -4);
+                printf("%d / -4 = %d\n", data[i], -4, data[i] / -4);
+                printf("%d % -4 = %d\n", data[i], -4, data[i] % -4);
+
+                printf("%d * -3 = %d\n", data[i], -3, data[i] * -3);
+                printf("%d / -3 = %d\n", data[i], -3, data[i] / -3);
+                printf("%d % -3 = %d\n", data[i], -3, data[i] % -3);
+
+                printf("%d * -2 = %d\n", data[i], -2, data[i] * -2);
+                printf("%d / -2 = %d\n", data[i], -2, data[i] / -2);
+                printf("%d % -2 = %d\n", data[i], -2, data[i] % -2);
+
+                printf("%d * -1 = %d\n", data[i], -1, data[i] * -1);
+                printf("%d / -1 = %d\n", data[i], -1, data[i] / -1);
+                printf("%d % -1 = %d\n", data[i], -1, data[i] % -1);
+
+                printf("%d * 0 = %d\n", data[i], 0, data[i] * 0);
+
+                printf("%d * 1 = %d\n", data[i], 1, data[i] * 1);
+                printf("%d / 1 = %d\n", data[i], 1, data[i] / 1);
+                printf("%d % 1 = %d\n", data[i], 1, data[i] % 1);
+
+                printf("%d * 2 = %d\n", data[i], 2, data[i] * 2);
+                printf("%d / 2 = %d\n", data[i], 2, data[i] / 2);
+                printf("%d % 2 = %d\n", data[i], 2, data[i] % 2);
+
+                printf("%d * 3 = %d\n", data[i], 3, data[i] * 3);
+                printf("%d / 3 = %d\n", data[i], 3, data[i] / 3);
+                printf("%d % 3 = %d\n", data[i], 3, data[i] % 3);
+
+                printf("%d * 4 = %d\n", data[i], 4, data[i] * 4);
+                printf("%d / 4 = %d\n", data[i], 4, data[i] / 4);
+                printf("%d % 4 = %d\n", data[i], 4, data[i] % 4);
+
+                printf("%d * 5 = %d\n", data[i], 5, data[i] * 5);
+                printf("%d / 5 = %d\n", data[i], 5, data[i] / 5);
+                printf("%d % 5 = %d\n", data[i], 5, data[i] % 5);
+
+                printf("%d * 6 = %d\n", data[i], 6, data[i] * 6);
+                printf("%d / 6 = %d\n", data[i], 6, data[i] / 6);
+                printf("%d % 6 = %d\n", data[i], 6, data[i] % 6);
+
+                printf("%d * 7 = %d\n", data[i], 7, data[i] * 7);
+                printf("%d / 7 = %d\n", data[i], 7, data[i] / 7);
+                printf("%d % 7 = %d\n", data[i], 7, data[i] % 7);
+
+                printf("%d * 8 = %d\n", data[i], 8, data[i] * 8);
+                printf("%d / 8 = %d\n", data[i], 8, data[i] / 8);
+                printf("%d % 8 = %d\n", data[i], 8, data[i] % 8);
+
+                printf("%d * 2147483647 = %d\n", data[i], 2147483647, data[i] * 2147483647);
+                printf("%d / 2147483647 = %d\n", data[i], 2147483647, data[i] / 2147483647);
+                printf("%d % 2147483647 = %d\n", data[i], 2147483647, data[i] % 2147483647);
+
+                printf("%d * -2147483648 = %d\n", data[i], -2147483648, data[i] * -2147483648);
+                printf("%d / -2147483648 = %d\n", data[i], -2147483648, data[i] / -2147483648);
+                printf("%d % -2147483648 = %d\n", data[i], -2147483648, data[i] % -2147483648);
+
+                printf("%d * 2147483646 = %d\n", data[i], 2147483646, data[i] * 2147483646);
+                printf("%d / 2147483646 = %d\n", data[i], 2147483646, data[i] / 2147483646);
+                printf("%d % 2147483646 = %d\n", data[i], 2147483646, data[i] % 2147483646);
+
+                printf("%d * -2147483647 = %d\n", data[i], -2147483647, data[i] * -2147483647);
+                printf("%d / -2147483647 = %d\n", data[i], -2147483647, data[i] / -2147483647);
+                printf("%d % -2147483647 = %d\n", data[i], -2147483647, data[i] % -2147483647);
+
+                printf("%d * 2147483645 = %d\n", data[i], 2147483645, data[i] * 2147483645);
+                printf("%d / 2147483645 = %d\n", data[i], 2147483645, data[i] / 2147483645);
+                printf("%d % 2147483645 = %d\n", data[i], 2147483645, data[i] % 2147483645);
+
+                printf("%d * -2147483646 = %d\n", data[i], -2147483646, data[i] * -2147483646);
+                printf("%d / -2147483646 = %d\n", data[i], -2147483646, data[i] / -2147483646);
+                printf("%d % -2147483646 = %d\n", data[i], -2147483646, data[i] % -2147483646);
+
+                printf("%d * 2147483644 = %d\n", data[i], 2147483644, data[i] * 2147483644);
+                printf("%d / 2147483644 = %d\n", data[i], 2147483644, data[i] / 2147483644);
+                printf("%d % 2147483644 = %d\n", data[i], 2147483644, data[i] % 2147483644);
+
+                printf("%d * -2147483645 = %d\n", data[i], -2147483645, data[i] * -2147483645);
+                printf("%d / -2147483645 = %d\n", data[i], -2147483645, data[i] / -2147483645);
+                printf("%d % -2147483645 = %d\n", data[i], -2147483645, data[i] % -2147483645);
+
+                printf("%d * 2147483643 = %d\n", data[i], 2147483643, data[i] * 2147483643);
+                printf("%d / 2147483643 = %d\n", data[i], 2147483643, data[i] / 2147483643);
+                printf("%d % 2147483643 = %d\n", data[i], 2147483643, data[i] % 2147483643);
+
+                printf("%d * -2147483644 = %d\n", data[i], -2147483644, data[i] * -2147483644);
+                printf("%d / -2147483644 = %d\n", data[i], -2147483644, data[i] / -2147483644);
+                printf("%d % -2147483644 = %d\n", data[i], -2147483644, data[i] % -2147483644);
+
+                printf("%d * 1 = %d\n", data[i], 1, data[i] * 1);
+                printf("%d / 1 = %d\n", data[i], 1, data[i] / 1);
+                printf("%d % 1 = %d\n", data[i], 1, data[i] % 1);
+
+                printf("%d * -2 = %d\n", data[i], -2, data[i] * -2);
+                printf("%d / -2 = %d\n", data[i], -2, data[i] / -2);
+                printf("%d % -2 = %d\n", data[i], -2, data[i] % -2);
+
+                printf("%d * 2 = %d\n", data[i], 2, data[i] * 2);
+                printf("%d / 2 = %d\n", data[i], 2, data[i] / 2);
+                printf("%d % 2 = %d\n", data[i], 2, data[i] % 2);
+
+                printf("%d * -3 = %d\n", data[i], -3, data[i] * -3);
+                printf("%d / -3 = %d\n", data[i], -3, data[i] / -3);
+                printf("%d % -3 = %d\n", data[i], -3, data[i] % -3);
+
+                printf("%d * 4 = %d\n", data[i], 4, data[i] * 4);
+                printf("%d / 4 = %d\n", data[i], 4, data[i] / 4);
+                printf("%d % 4 = %d\n", data[i], 4, data[i] % 4);
+
+                printf("%d * -5 = %d\n", data[i], -5, data[i] * -5);
+                printf("%d / -5 = %d\n", data[i], -5, data[i] / -5);
+                printf("%d % -5 = %d\n", data[i], -5, data[i] % -5);
+
+                printf("%d * 8 = %d\n", data[i], 8, data[i] * 8);
+                printf("%d / 8 = %d\n", data[i], 8, data[i] / 8);
+                printf("%d % 8 = %d\n", data[i], 8, data[i] % 8);
+
+                printf("%d * -9 = %d\n", data[i], -9, data[i] * -9);
+                printf("%d / -9 = %d\n", data[i], -9, data[i] / -9);
+                printf("%d % -9 = %d\n", data[i], -9, data[i] % -9);
+
+                printf("%d * 16 = %d\n", data[i], 16, data[i] * 16);
+                printf("%d / 16 = %d\n", data[i], 16, data[i] / 16);
+                printf("%d % 16 = %d\n", data[i], 16, data[i] % 16);
+
+                printf("%d * -17 = %d\n", data[i], -17, data[i] * -17);
+                printf("%d / -17 = %d\n", data[i], -17, data[i] / -17);
+                printf("%d % -17 = %d\n", data[i], -17, data[i] % -17);
+
+                printf("%d * 32 = %d\n", data[i], 32, data[i] * 32);
+                printf("%d / 32 = %d\n", data[i], 32, data[i] / 32);
+                printf("%d % 32 = %d\n", data[i], 32, data[i] % 32);
+
+                printf("%d * -33 = %d\n", data[i], -33, data[i] * -33);
+                printf("%d / -33 = %d\n", data[i], -33, data[i] / -33);
+                printf("%d % -33 = %d\n", data[i], -33, data[i] % -33);
+
+                printf("%d * 64 = %d\n", data[i], 64, data[i] * 64);
+                printf("%d / 64 = %d\n", data[i], 64, data[i] / 64);
+                printf("%d % 64 = %d\n", data[i], 64, data[i] % 64);
+
+                printf("%d * -65 = %d\n", data[i], -65, data[i] * -65);
+                printf("%d / -65 = %d\n", data[i], -65, data[i] / -65);
+                printf("%d % -65 = %d\n", data[i], -65, data[i] % -65);
+
+                printf("%d * 128 = %d\n", data[i], 128, data[i] * 128);
+                printf("%d / 128 = %d\n", data[i], 128, data[i] / 128);
+                printf("%d % 128 = %d\n", data[i], 128, data[i] % 128);
+
+                printf("%d * -129 = %d\n", data[i], -129, data[i] * -129);
+                printf("%d / -129 = %d\n", data[i], -129, data[i] / -129);
+                printf("%d % -129 = %d\n", data[i], -129, data[i] % -129);
+
+                printf("%d * 256 = %d\n", data[i], 256, data[i] * 256);
+                printf("%d / 256 = %d\n", data[i], 256, data[i] / 256);
+                printf("%d % 256 = %d\n", data[i], 256, data[i] % 256);
+
+                printf("%d * -257 = %d\n", data[i], -257, data[i] * -257);
+                printf("%d / -257 = %d\n", data[i], -257, data[i] / -257);
+                printf("%d % -257 = %d\n", data[i], -257, data[i] % -257);
+
+                printf("%d * 512 = %d\n", data[i], 512, data[i] * 512);
+                printf("%d / 512 = %d\n", data[i], 512, data[i] / 512);
+                printf("%d % 512 = %d\n", data[i], 512, data[i] % 512);
+
+                printf("%d * -513 = %d\n", data[i], -513, data[i] * -513);
+                printf("%d / -513 = %d\n", data[i], -513, data[i] / -513);
+                printf("%d % -513 = %d\n", data[i], -513, data[i] % -513);
+
+                printf("%d * 1024 = %d\n", data[i], 1024, data[i] * 1024);
+                printf("%d / 1024 = %d\n", data[i], 1024, data[i] / 1024);
+                printf("%d % 1024 = %d\n", data[i], 1024, data[i] % 1024);
+
+                printf("%d * -1025 = %d\n", data[i], -1025, data[i] * -1025);
+                printf("%d / -1025 = %d\n", data[i], -1025, data[i] / -1025);
+                printf("%d % -1025 = %d\n", data[i], -1025, data[i] % -1025);
+
+                printf("%d * 2048 = %d\n", data[i], 2048, data[i] * 2048);
+                printf("%d / 2048 = %d\n", data[i], 2048, data[i] / 2048);
+                printf("%d % 2048 = %d\n", data[i], 2048, data[i] % 2048);
+
+                printf("%d * -2049 = %d\n", data[i], -2049, data[i] * -2049);
+                printf("%d / -2049 = %d\n", data[i], -2049, data[i] / -2049);
+                printf("%d % -2049 = %d\n", data[i], -2049, data[i] % -2049);
+
+                printf("%d * 4096 = %d\n", data[i], 4096, data[i] * 4096);
+                printf("%d / 4096 = %d\n", data[i], 4096, data[i] / 4096);
+                printf("%d % 4096 = %d\n", data[i], 4096, data[i] % 4096);
+
+                printf("%d * -4097 = %d\n", data[i], -4097, data[i] * -4097);
+                printf("%d / -4097 = %d\n", data[i], -4097, data[i] / -4097);
+                printf("%d % -4097 = %d\n", data[i], -4097, data[i] % -4097);
+
+                printf("%d * 8192 = %d\n", data[i], 8192, data[i] * 8192);
+                printf("%d / 8192 = %d\n", data[i], 8192, data[i] / 8192);
+                printf("%d % 8192 = %d\n", data[i], 8192, data[i] % 8192);
+
+                printf("%d * -8193 = %d\n", data[i], -8193, data[i] * -8193);
+                printf("%d / -8193 = %d\n", data[i], -8193, data[i] / -8193);
+                printf("%d % -8193 = %d\n", data[i], -8193, data[i] % -8193);
+
+                printf("%d * 16384 = %d\n", data[i], 16384, data[i] * 16384);
+                printf("%d / 16384 = %d\n", data[i], 16384, data[i] / 16384);
+                printf("%d % 16384 = %d\n", data[i], 16384, data[i] % 16384);
+
+                printf("%d * -16385 = %d\n", data[i], -16385, data[i] * -16385);
+                printf("%d / -16385 = %d\n", data[i], -16385, data[i] / -16385);
+                printf("%d % -16385 = %d\n", data[i], -16385, data[i] % -16385);
+
+                printf("%d * 32768 = %d\n", data[i], 32768, data[i] * 32768);
+                printf("%d / 32768 = %d\n", data[i], 32768, data[i] / 32768);
+                printf("%d % 32768 = %d\n", data[i], 32768, data[i] % 32768);
+
+                printf("%d * -32769 = %d\n", data[i], -32769, data[i] * -32769);
+                printf("%d / -32769 = %d\n", data[i], -32769, data[i] / -32769);
+                printf("%d % -32769 = %d\n", data[i], -32769, data[i] % -32769);
+
+                printf("%d * 65536 = %d\n", data[i], 65536, data[i] * 65536);
+                printf("%d / 65536 = %d\n", data[i], 65536, data[i] / 65536);
+                printf("%d % 65536 = %d\n", data[i], 65536, data[i] % 65536);
+
+                printf("%d * -65537 = %d\n", data[i], -65537, data[i] * -65537);
+                printf("%d / -65537 = %d\n", data[i], -65537, data[i] / -65537);
+                printf("%d % -65537 = %d\n", data[i], -65537, data[i] % -65537);
+
+                printf("%d * 131072 = %d\n", data[i], 131072, data[i] * 131072);
+                printf("%d / 131072 = %d\n", data[i], 131072, data[i] / 131072);
+                printf("%d % 131072 = %d\n", data[i], 131072, data[i] % 131072);
+
+                printf("%d * -131073 = %d\n", data[i], -131073, data[i] * -131073);
+                printf("%d / -131073 = %d\n", data[i], -131073, data[i] / -131073);
+                printf("%d % -131073 = %d\n", data[i], -131073, data[i] % -131073);
+
+                printf("%d * 262144 = %d\n", data[i], 262144, data[i] * 262144);
+                printf("%d / 262144 = %d\n", data[i], 262144, data[i] / 262144);
+                printf("%d % 262144 = %d\n", data[i], 262144, data[i] % 262144);
+
+                printf("%d * -262145 = %d\n", data[i], -262145, data[i] * -262145);
+                printf("%d / -262145 = %d\n", data[i], -262145, data[i] / -262145);
+                printf("%d % -262145 = %d\n", data[i], -262145, data[i] % -262145);
+
+                printf("%d * 524288 = %d\n", data[i], 524288, data[i] * 524288);
+                printf("%d / 524288 = %d\n", data[i], 524288, data[i] / 524288);
+                printf("%d % 524288 = %d\n", data[i], 524288, data[i] % 524288);
+
+                printf("%d * -524289 = %d\n", data[i], -524289, data[i] * -524289);
+                printf("%d / -524289 = %d\n", data[i], -524289, data[i] / -524289);
+                printf("%d % -524289 = %d\n", data[i], -524289, data[i] % -524289);
+
+                printf("%d * 1048576 = %d\n", data[i], 1048576, data[i] * 1048576);
+                printf("%d / 1048576 = %d\n", data[i], 1048576, data[i] / 1048576);
+                printf("%d % 1048576 = %d\n", data[i], 1048576, data[i] % 1048576);
+
+                printf("%d * -1048577 = %d\n", data[i], -1048577, data[i] * -1048577);
+                printf("%d / -1048577 = %d\n", data[i], -1048577, data[i] / -1048577);
+                printf("%d % -1048577 = %d\n", data[i], -1048577, data[i] % -1048577);
+
+                printf("%d * 2097152 = %d\n", data[i], 2097152, data[i] * 2097152);
+                printf("%d / 2097152 = %d\n", data[i], 2097152, data[i] / 2097152);
+                printf("%d % 2097152 = %d\n", data[i], 2097152, data[i] % 2097152);
+
+                printf("%d * -2097153 = %d\n", data[i], -2097153, data[i] * -2097153);
+                printf("%d / -2097153 = %d\n", data[i], -2097153, data[i] / -2097153);
+                printf("%d % -2097153 = %d\n", data[i], -2097153, data[i] % -2097153);
+
+                printf("%d * 4194304 = %d\n", data[i], 4194304, data[i] * 4194304);
+                printf("%d / 4194304 = %d\n", data[i], 4194304, data[i] / 4194304);
+                printf("%d % 4194304 = %d\n", data[i], 4194304, data[i] % 4194304);
+
+                printf("%d * -4194305 = %d\n", data[i], -4194305, data[i] * -4194305);
+                printf("%d / -4194305 = %d\n", data[i], -4194305, data[i] / -4194305);
+                printf("%d % -4194305 = %d\n", data[i], -4194305, data[i] % -4194305);
+
+                printf("%d * 8388608 = %d\n", data[i], 8388608, data[i] * 8388608);
+                printf("%d / 8388608 = %d\n", data[i], 8388608, data[i] / 8388608);
+                printf("%d % 8388608 = %d\n", data[i], 8388608, data[i] % 8388608);
+
+                printf("%d * -8388609 = %d\n", data[i], -8388609, data[i] * -8388609);
+                printf("%d / -8388609 = %d\n", data[i], -8388609, data[i] / -8388609);
+                printf("%d % -8388609 = %d\n", data[i], -8388609, data[i] % -8388609);
+
+                printf("%d * 16777216 = %d\n", data[i], 16777216, data[i] * 16777216);
+                printf("%d / 16777216 = %d\n", data[i], 16777216, data[i] / 16777216);
+                printf("%d % 16777216 = %d\n", data[i], 16777216, data[i] % 16777216);
+
+                printf("%d * -16777217 = %d\n", data[i], -16777217, data[i] * -16777217);
+                printf("%d / -16777217 = %d\n", data[i], -16777217, data[i] / -16777217);
+                printf("%d % -16777217 = %d\n", data[i], -16777217, data[i] % -16777217);
+
+                printf("%d * 33554432 = %d\n", data[i], 33554432, data[i] * 33554432);
+                printf("%d / 33554432 = %d\n", data[i], 33554432, data[i] / 33554432);
+                printf("%d % 33554432 = %d\n", data[i], 33554432, data[i] % 33554432);
+
+                printf("%d * -33554433 = %d\n", data[i], -33554433, data[i] * -33554433);
+                printf("%d / -33554433 = %d\n", data[i], -33554433, data[i] / -33554433);
+                printf("%d % -33554433 = %d\n", data[i], -33554433, data[i] % -33554433);
+
+                printf("%d * 67108864 = %d\n", data[i], 67108864, data[i] * 67108864);
+                printf("%d / 67108864 = %d\n", data[i], 67108864, data[i] / 67108864);
+                printf("%d % 67108864 = %d\n", data[i], 67108864, data[i] % 67108864);
+
+                printf("%d * -67108865 = %d\n", data[i], -67108865, data[i] * -67108865);
+                printf("%d / -67108865 = %d\n", data[i], -67108865, data[i] / -67108865);
+                printf("%d % -67108865 = %d\n", data[i], -67108865, data[i] % -67108865);
+
+                printf("%d * 134217728 = %d\n", data[i], 134217728, data[i] * 134217728);
+                printf("%d / 134217728 = %d\n", data[i], 134217728, data[i] / 134217728);
+                printf("%d % 134217728 = %d\n", data[i], 134217728, data[i] % 134217728);
+
+                printf("%d * -134217729 = %d\n", data[i], -134217729, data[i] * -134217729);
+                printf("%d / -134217729 = %d\n", data[i], -134217729, data[i] / -134217729);
+                printf("%d % -134217729 = %d\n", data[i], -134217729, data[i] % -134217729);
+
+                printf("%d * 268435456 = %d\n", data[i], 268435456, data[i] * 268435456);
+                printf("%d / 268435456 = %d\n", data[i], 268435456, data[i] / 268435456);
+                printf("%d % 268435456 = %d\n", data[i], 268435456, data[i] % 268435456);
+
+                printf("%d * -268435457 = %d\n", data[i], -268435457, data[i] * -268435457);
+                printf("%d / -268435457 = %d\n", data[i], -268435457, data[i] / -268435457);
+                printf("%d % -268435457 = %d\n", data[i], -268435457, data[i] % -268435457);
+
+                printf("%d * 536870912 = %d\n", data[i], 536870912, data[i] * 536870912);
+                printf("%d / 536870912 = %d\n", data[i], 536870912, data[i] / 536870912);
+                printf("%d % 536870912 = %d\n", data[i], 536870912, data[i] % 536870912);
+
+                printf("%d * -536870913 = %d\n", data[i], -536870913, data[i] * -536870913);
+                printf("%d / -536870913 = %d\n", data[i], -536870913, data[i] / -536870913);
+                printf("%d % -536870913 = %d\n", data[i], -536870913, data[i] % -536870913);
+
+                printf("%d * 1073741824 = %d\n", data[i], 1073741824, data[i] * 1073741824);
+                printf("%d / 1073741824 = %d\n", data[i], 1073741824, data[i] / 1073741824);
+                printf("%d % 1073741824 = %d\n", data[i], 1073741824, data[i] % 1073741824);
+
+                printf("%d * -1073741825 = %d\n", data[i], -1073741825, data[i] * -1073741825);
+                printf("%d / -1073741825 = %d\n", data[i], -1073741825, data[i] / -1073741825);
+                printf("%d % -1073741825 = %d\n", data[i], -1073741825, data[i] % -1073741825);
+
+                printf("%d * -2147483648 = %d\n", data[i], -2147483648, data[i] * -2147483648);
+                printf("%d / -2147483648 = %d\n", data[i], -2147483648, data[i] / -2147483648);
+                printf("%d % -2147483648 = %d\n", data[i], -2147483648, data[i] % -2147483648);
+
+                printf("%d * 2147483647 = %d\n", data[i], 2147483647, data[i] * 2147483647);
+                printf("%d / 2147483647 = %d\n", data[i], 2147483647, data[i] / 2147483647);
+                printf("%d % 2147483647 = %d\n", data[i], 2147483647, data[i] % 2147483647);
+
+                printf("%d * 1028 = %d\n", data[i], 1028, data[i] * 1028);
+                printf("%d / 1028 = %d\n", data[i], 1028, data[i] / 1028);
+                printf("%d % 1028 = %d\n", data[i], 1028, data[i] % 1028);
+
+                printf("%d * -33554945 = %d\n", data[i], -33554945, data[i] * -33554945);
+                printf("%d / -33554945 = %d\n", data[i], -33554945, data[i] / -33554945);
+                printf("%d % -33554945 = %d\n", data[i], -33554945, data[i] % -33554945);
+
+                printf("%d * 201326592 = %d\n", data[i], 201326592, data[i] * 201326592);
+                printf("%d / 201326592 = %d\n", data[i], 201326592, data[i] / 201326592);
+                printf("%d % 201326592 = %d\n", data[i], 201326592, data[i] % 201326592);
+
+                printf("%d * -1082130433 = %d\n", data[i], -1082130433, data[i] * -1082130433);
+                printf("%d / -1082130433 = %d\n", data[i], -1082130433, data[i] / -1082130433);
+                printf("%d % -1082130433 = %d\n", data[i], -1082130433, data[i] % -1082130433);
+
+                printf("%d * 526336 = %d\n", data[i], 526336, data[i] * 526336);
+                printf("%d / 526336 = %d\n", data[i], 526336, data[i] / 526336);
+                printf("%d % 526336 = %d\n", data[i], 526336, data[i] % 526336);
+
+                printf("%d * -131074 = %d\n", data[i], -131074, data[i] * -131074);
+                printf("%d / -131074 = %d\n", data[i], -131074, data[i] / -131074);
+                printf("%d % -131074 = %d\n", data[i], -131074, data[i] % -131074);
+
+                printf("%d * 17039360 = %d\n", data[i], 17039360, data[i] * 17039360);
+                printf("%d / 17039360 = %d\n", data[i], 17039360, data[i] / 17039360);
+                printf("%d % 17039360 = %d\n", data[i], 17039360, data[i] % 17039360);
+
+                printf("%d * -134218753 = %d\n", data[i], -134218753, data[i] * -134218753);
+                printf("%d / -134218753 = %d\n", data[i], -134218753, data[i] / -134218753);
+                printf("%d % -134218753 = %d\n", data[i], -134218753, data[i] % -134218753);
+
+                printf("%d * 33556480 = %d\n", data[i], 33556480, data[i] * 33556480);
+                printf("%d / 33556480 = %d\n", data[i], 33556480, data[i] / 33556480);
+                printf("%d % 33556480 = %d\n", data[i], 33556480, data[i] % 33556480);
+
+                printf("%d * -269484033 = %d\n", data[i], -269484033, data[i] * -269484033);
+                printf("%d / -269484033 = %d\n", data[i], -269484033, data[i] / -269484033);
+                printf("%d % -269484033 = %d\n", data[i], -269484033, data[i] % -269484033);
+
+                printf("%d * 2 = %d\n", data[i], 2, data[i] * 2);
+                printf("%d / 2 = %d\n", data[i], 2, data[i] / 2);
+                printf("%d % 2 = %d\n", data[i], 2, data[i] % 2);
+
+                printf("%d * -67141633 = %d\n", data[i], -67141633, data[i] * -67141633);
+                printf("%d / -67141633 = %d\n", data[i], -67141633, data[i] / -67141633);
+                printf("%d % -67141633 = %d\n", data[i], -67141633, data[i] % -67141633);
+
+                printf("%d * 134742016 = %d\n", data[i], 134742016, data[i] * 134742016);
+                printf("%d / 134742016 = %d\n", data[i], 134742016, data[i] / 134742016);
+                printf("%d % 134742016 = %d\n", data[i], 134742016, data[i] % 134742016);
+
+                printf("%d * -50331649 = %d\n", data[i], -50331649, data[i] * -50331649);
+                printf("%d / -50331649 = %d\n", data[i], -50331649, data[i] / -50331649);
+                printf("%d % -50331649 = %d\n", data[i], -50331649, data[i] % -50331649);
+
+                printf("%d * 1536 = %d\n", data[i], 1536, data[i] * 1536);
+                printf("%d / 1536 = %d\n", data[i], 1536, data[i] / 1536);
+                printf("%d % 1536 = %d\n", data[i], 1536, data[i] % 1536);
+
+                printf("%d * -81 = %d\n", data[i], -81, data[i] * -81);
+                printf("%d / -81 = %d\n", data[i], -81, data[i] / -81);
+                printf("%d % -81 = %d\n", data[i], -81, data[i] % -81);
+
+                printf("%d * 2621440 = %d\n", data[i], 2621440, data[i] * 2621440);
+                printf("%d / 2621440 = %d\n", data[i], 2621440, data[i] / 2621440);
+                printf("%d % 2621440 = %d\n", data[i], 2621440, data[i] % 2621440);
+
+                printf("%d * -268435473 = %d\n", data[i], -268435473, data[i] * -268435473);
+                printf("%d / -268435473 = %d\n", data[i], -268435473, data[i] / -268435473);
+                printf("%d % -268435473 = %d\n", data[i], -268435473, data[i] % -268435473);
+
+                printf("%d * 2113536 = %d\n", data[i], 2113536, data[i] * 2113536);
+                printf("%d / 2113536 = %d\n", data[i], 2113536, data[i] / 2113536);
+                printf("%d % 2113536 = %d\n", data[i], 2113536, data[i] % 2113536);
+
+                printf("%d * -16777249 = %d\n", data[i], -16777249, data[i] * -16777249);
+                printf("%d / -16777249 = %d\n", data[i], -16777249, data[i] / -16777249);
+                printf("%d % -16777249 = %d\n", data[i], -16777249, data[i] % -16777249);
+
+                printf("%d * -1073741824 = %d\n", data[i], -1073741824, data[i] * -1073741824);
+                printf("%d / -1073741824 = %d\n", data[i], -1073741824, data[i] / -1073741824);
+                printf("%d % -1073741824 = %d\n", data[i], -1073741824, data[i] % -1073741824);
+
+                printf("%d * -4 = %d\n", data[i], -4, data[i] * -4);
+                printf("%d / -4 = %d\n", data[i], -4, data[i] / -4);
+                printf("%d % -4 = %d\n", data[i], -4, data[i] % -4);
+
+                printf("%d * 8196 = %d\n", data[i], 8196, data[i] * 8196);
+                printf("%d / 8196 = %d\n", data[i], 8196, data[i] / 8196);
+                printf("%d % 8196 = %d\n", data[i], 8196, data[i] % 8196);
+
+                printf("%d * -1073741825 = %d\n", data[i], -1073741825, data[i] * -1073741825);
+                printf("%d / -1073741825 = %d\n", data[i], -1073741825, data[i] / -1073741825);
+                printf("%d % -1073741825 = %d\n", data[i], -1073741825, data[i] % -1073741825);
+
+                printf("%d * 541065216 = %d\n", data[i], 541065216, data[i] * 541065216);
+                printf("%d / 541065216 = %d\n", data[i], 541065216, data[i] / 541065216);
+                printf("%d % 541065216 = %d\n", data[i], 541065216, data[i] % 541065216);
+
+                printf("%d * -32773 = %d\n", data[i], -32773, data[i] * -32773);
+                printf("%d / -32773 = %d\n", data[i], -32773, data[i] / -32773);
+                printf("%d % -32773 = %d\n", data[i], -32773, data[i] % -32773);
+
+                printf("%d * 1056 = %d\n", data[i], 1056, data[i] * 1056);
+                printf("%d / 1056 = %d\n", data[i], 1056, data[i] / 1056);
+                printf("%d % 1056 = %d\n", data[i], 1056, data[i] % 1056);
+
+                printf("%d * -1048593 = %d\n", data[i], -1048593, data[i] * -1048593);
+                printf("%d / -1048593 = %d\n", data[i], -1048593, data[i] / -1048593);
+                printf("%d % -1048593 = %d\n", data[i], -1048593, data[i] % -1048593);
+
+                printf("%d * 8396800 = %d\n", data[i], 8396800, data[i] * 8396800);
+                printf("%d / 8396800 = %d\n", data[i], 8396800, data[i] / 8396800);
+                printf("%d % 8396800 = %d\n", data[i], 8396800, data[i] % 8396800);
+
+                printf("%d * -134219777 = %d\n", data[i], -134219777, data[i] * -134219777);
+                printf("%d / -134219777 = %d\n", data[i], -134219777, data[i] / -134219777);
+                printf("%d % -134219777 = %d\n", data[i], -134219777, data[i] % -134219777);
+
+                printf("%d * 67109120 = %d\n", data[i], 67109120, data[i] * 67109120);
+                printf("%d / 67109120 = %d\n", data[i], 67109120, data[i] / 67109120);
+                printf("%d % 67109120 = %d\n", data[i], 67109120, data[i] % 67109120);
+
+                printf("%d * 2147483647 = %d\n", data[i], 2147483647, data[i] * 2147483647);
+                printf("%d / 2147483647 = %d\n", data[i], 2147483647, data[i] / 2147483647);
+                printf("%d % 2147483647 = %d\n", data[i], 2147483647, data[i] % 2147483647);
+
+                printf("%d * 8388609 = %d\n", data[i], 8388609, data[i] * 8388609);
+                printf("%d / 8388609 = %d\n", data[i], 8388609, data[i] / 8388609);
+                printf("%d % 8388609 = %d\n", data[i], 8388609, data[i] % 8388609);
+
+                printf("%d * -67108873 = %d\n", data[i], -67108873, data[i] * -67108873);
+                printf("%d / -67108873 = %d\n", data[i], -67108873, data[i] / -67108873);
+                printf("%d % -67108873 = %d\n", data[i], -67108873, data[i] % -67108873);
+
+                printf("%d * 393216 = %d\n", data[i], 393216, data[i] * 393216);
+                printf("%d / 393216 = %d\n", data[i], 393216, data[i] / 393216);
+                printf("%d % 393216 = %d\n", data[i], 393216, data[i] % 393216);
+
+                printf("%d * -262657 = %d\n", data[i], -262657, data[i] * -262657);
+                printf("%d / -262657 = %d\n", data[i], -262657, data[i] / -262657);
+                printf("%d % -262657 = %d\n", data[i], -262657, data[i] % -262657);
+
+                printf("%d * 528 = %d\n", data[i], 528, data[i] * 528);
+                printf("%d / 528 = %d\n", data[i], 528, data[i] / 528);
+                printf("%d % 528 = %d\n", data[i], 528, data[i] % 528);
+
+                printf("%d * -66 = %d\n", data[i], -66, data[i] * -66);
+                printf("%d / -66 = %d\n", data[i], -66, data[i] / -66);
+                printf("%d % -66 = %d\n", data[i], -66, data[i] % -66);
+
+                printf("%d * -2013265920 = %d\n", data[i], -2013265920, data[i] * -2013265920);
+                printf("%d / -2013265920 = %d\n", data[i], -2013265920, data[i] / -2013265920);
+                printf("%d % -2013265920 = %d\n", data[i], -2013265920, data[i] % -2013265920);
+
+                printf("%d * 2147483645 = %d\n", data[i], 2147483645, data[i] * 2147483645);
+                printf("%d / 2147483645 = %d\n", data[i], 2147483645, data[i] / 2147483645);
+                printf("%d % 2147483645 = %d\n", data[i], 2147483645, data[i] % 2147483645);
+
+                printf("%d * 268435584 = %d\n", data[i], 268435584, data[i] * 268435584);
+                printf("%d / 268435584 = %d\n", data[i], 268435584, data[i] / 268435584);
+                printf("%d % 268435584 = %d\n", data[i], 268435584, data[i] % 268435584);
+
+                printf("%d * -4210689 = %d\n", data[i], -4210689, data[i] * -4210689);
+                printf("%d / -4210689 = %d\n", data[i], -4210689, data[i] / -4210689);
+                printf("%d % -4210689 = %d\n", data[i], -4210689, data[i] % -4210689);
+
+                printf("%d * -1598623456 = %d\n", data[i], -1598623456, data[i] * -1598623456);
+                printf("%d / -1598623456 = %d\n", data[i], -1598623456, data[i] / -1598623456);
+                printf("%d % -1598623456 = %d\n", data[i], -1598623456, data[i] % -1598623456);
+
+                printf("%d * 7301 = %d\n", data[i], 7301, data[i] * 7301);
+                printf("%d / 7301 = %d\n", data[i], 7301, data[i] / 7301);
+                printf("%d % 7301 = %d\n", data[i], 7301, data[i] % 7301);
+
+                printf("%d * -8 = %d\n", data[i], -8, data[i] * -8);
+                printf("%d / -8 = %d\n", data[i], -8, data[i] / -8);
+                printf("%d % -8 = %d\n", data[i], -8, data[i] % -8);
+
+                printf("%d * -913094563 = %d\n", data[i], -913094563, data[i] * -913094563);
+                printf("%d / -913094563 = %d\n", data[i], -913094563, data[i] / -913094563);
+                printf("%d % -913094563 = %d\n", data[i], -913094563, data[i] % -913094563);
+
+                printf("%d * 942 = %d\n", data[i], 942, data[i] * 942);
+                printf("%d / 942 = %d\n", data[i], 942, data[i] / 942);
+                printf("%d % 942 = %d\n", data[i], 942, data[i] % 942);
+
+                printf("%d * 4 = %d\n", data[i], 4, data[i] * 4);
+                printf("%d / 4 = %d\n", data[i], 4, data[i] / 4);
+                printf("%d % 4 = %d\n", data[i], 4, data[i] % 4);
+
+                printf("%d * 1476512371 = %d\n", data[i], 1476512371, data[i] * 1476512371);
+                printf("%d / 1476512371 = %d\n", data[i], 1476512371, data[i] / 1476512371);
+                printf("%d % 1476512371 = %d\n", data[i], 1476512371, data[i] % 1476512371);
+
+                printf("%d * 10225 = %d\n", data[i], 10225, data[i] * 10225);
+                printf("%d / 10225 = %d\n", data[i], 10225, data[i] / 10225);
+                printf("%d % 10225 = %d\n", data[i], 10225, data[i] % 10225);
+
+                printf("%d * 71 = %d\n", data[i], 71, data[i] * 71);
+                printf("%d / 71 = %d\n", data[i], 71, data[i] / 71);
+                printf("%d % 71 = %d\n", data[i], 71, data[i] % 71);
+
+                printf("%d * -1925757403 = %d\n", data[i], -1925757403, data[i] * -1925757403);
+                printf("%d / -1925757403 = %d\n", data[i], -1925757403, data[i] / -1925757403);
+                printf("%d % -1925757403 = %d\n", data[i], -1925757403, data[i] % -1925757403);
+
+                printf("%d * 8964 = %d\n", data[i], 8964, data[i] * 8964);
+                printf("%d / 8964 = %d\n", data[i], 8964, data[i] / 8964);
+                printf("%d % 8964 = %d\n", data[i], 8964, data[i] % 8964);
+
+                printf("%d * -26 = %d\n", data[i], -26, data[i] * -26);
+                printf("%d / -26 = %d\n", data[i], -26, data[i] / -26);
+                printf("%d % -26 = %d\n", data[i], -26, data[i] % -26);
+
+                printf("%d * -628850884 = %d\n", data[i], -628850884, data[i] * -628850884);
+                printf("%d / -628850884 = %d\n", data[i], -628850884, data[i] / -628850884);
+                printf("%d % -628850884 = %d\n", data[i], -628850884, data[i] % -628850884);
+
+                printf("%d * 9565 = %d\n", data[i], 9565, data[i] * 9565);
+                printf("%d / 9565 = %d\n", data[i], 9565, data[i] / 9565);
+                printf("%d % 9565 = %d\n", data[i], 9565, data[i] % 9565);
+
+                printf("%d * -86 = %d\n", data[i], -86, data[i] * -86);
+                printf("%d / -86 = %d\n", data[i], -86, data[i] / -86);
+                printf("%d % -86 = %d\n", data[i], -86, data[i] % -86);
+
+                printf("%d * -550176260 = %d\n", data[i], -550176260, data[i] * -550176260);
+                printf("%d / -550176260 = %d\n", data[i], -550176260, data[i] / -550176260);
+                printf("%d % -550176260 = %d\n", data[i], -550176260, data[i] % -550176260);
+
+                printf("%d * 9174 = %d\n", data[i], 9174, data[i] * 9174);
+                printf("%d / 9174 = %d\n", data[i], 9174, data[i] / 9174);
+                printf("%d % 9174 = %d\n", data[i], 9174, data[i] % 9174);
+
+                printf("%d * 47 = %d\n", data[i], 47, data[i] * 47);
+                printf("%d / 47 = %d\n", data[i], 47, data[i] / 47);
+                printf("%d % 47 = %d\n", data[i], 47, data[i] % 47);
+
+                printf("%d * -967918919 = %d\n", data[i], -967918919, data[i] * -967918919);
+                printf("%d / -967918919 = %d\n", data[i], -967918919, data[i] / -967918919);
+                printf("%d % -967918919 = %d\n", data[i], -967918919, data[i] % -967918919);
+
+                printf("%d * 30481 = %d\n", data[i], 30481, data[i] * 30481);
+                printf("%d / 30481 = %d\n", data[i], 30481, data[i] / 30481);
+                printf("%d % 30481 = %d\n", data[i], 30481, data[i] % 30481);
+
+                printf("%d * -48 = %d\n", data[i], -48, data[i] * -48);
+                printf("%d / -48 = %d\n", data[i], -48, data[i] / -48);
+                printf("%d % -48 = %d\n", data[i], -48, data[i] % -48);
+
+                printf("%d * 686554515 = %d\n", data[i], 686554515, data[i] * 686554515);
+                printf("%d / 686554515 = %d\n", data[i], 686554515, data[i] / 686554515);
+                printf("%d % 686554515 = %d\n", data[i], 686554515, data[i] % 686554515);
+
+                printf("%d * -9037 = %d\n", data[i], -9037, data[i] * -9037);
+                printf("%d / -9037 = %d\n", data[i], -9037, data[i] / -9037);
+                printf("%d % -9037 = %d\n", data[i], -9037, data[i] % -9037);
+
+                printf("%d * 29 = %d\n", data[i], 29, data[i] * 29);
+                printf("%d / 29 = %d\n", data[i], 29, data[i] / 29);
+                printf("%d % 29 = %d\n", data[i], 29, data[i] % 29);
+
+                printf("%d * 2127646236 = %d\n", data[i], 2127646236, data[i] * 2127646236);
+                printf("%d / 2127646236 = %d\n", data[i], 2127646236, data[i] / 2127646236);
+                printf("%d % 2127646236 = %d\n", data[i], 2127646236, data[i] % 2127646236);
+
+                printf("%d * -6025 = %d\n", data[i], -6025, data[i] * -6025);
+                printf("%d / -6025 = %d\n", data[i], -6025, data[i] / -6025);
+                printf("%d % -6025 = %d\n", data[i], -6025, data[i] % -6025);
+
+                printf("%d * 86 = %d\n", data[i], 86, data[i] * 86);
+                printf("%d / 86 = %d\n", data[i], 86, data[i] / 86);
+                printf("%d % 86 = %d\n", data[i], 86, data[i] % 86);
+
+                printf("%d * 1841761445 = %d\n", data[i], 1841761445, data[i] * 1841761445);
+                printf("%d / 1841761445 = %d\n", data[i], 1841761445, data[i] / 1841761445);
+                printf("%d % 1841761445 = %d\n", data[i], 1841761445, data[i] % 1841761445);
+
+                printf("%d * -17730 = %d\n", data[i], -17730, data[i] * -17730);
+                printf("%d / -17730 = %d\n", data[i], -17730, data[i] / -17730);
+                printf("%d % -17730 = %d\n", data[i], -17730, data[i] % -17730);
+
+                printf("%d * -68 = %d\n", data[i], -68, data[i] * -68);
+                printf("%d / -68 = %d\n", data[i], -68, data[i] / -68);
+                printf("%d % -68 = %d\n", data[i], -68, data[i] % -68);
+
+                printf("%d * 604747407 = %d\n", data[i], 604747407, data[i] * 604747407);
+                printf("%d / 604747407 = %d\n", data[i], 604747407, data[i] / 604747407);
+                printf("%d % 604747407 = %d\n", data[i], 604747407, data[i] % 604747407);
+
+                printf("%d * 27749 = %d\n", data[i], 27749, data[i] * 27749);
+                printf("%d / 27749 = %d\n", data[i], 27749, data[i] / 27749);
+                printf("%d % 27749 = %d\n", data[i], 27749, data[i] % 27749);
+
+                printf("%d * 23 = %d\n", data[i], 23, data[i] * 23);
+                printf("%d / 23 = %d\n", data[i], 23, data[i] / 23);
+                printf("%d % 23 = %d\n", data[i], 23, data[i] % 23);
+
+                printf("%d * -1799999611 = %d\n", data[i], -1799999611, data[i] * -1799999611);
+                printf("%d / -1799999611 = %d\n", data[i], -1799999611, data[i] / -1799999611);
+                printf("%d % -1799999611 = %d\n", data[i], -1799999611, data[i] % -1799999611);
+
+                printf("%d * -25155 = %d\n", data[i], -25155, data[i] * -25155);
+                printf("%d / -25155 = %d\n", data[i], -25155, data[i] / -25155);
+                printf("%d % -25155 = %d\n", data[i], -25155, data[i] % -25155);
+
+                printf("%d * 73 = %d\n", data[i], 73, data[i] * 73);
+                printf("%d / 73 = %d\n", data[i], 73, data[i] / 73);
+                printf("%d % 73 = %d\n", data[i], 73, data[i] % 73);
+
+                printf("%d * -449588718 = %d\n", data[i], -449588718, data[i] * -449588718);
+                printf("%d / -449588718 = %d\n", data[i], -449588718, data[i] / -449588718);
+                printf("%d % -449588718 = %d\n", data[i], -449588718, data[i] % -449588718);
+
+                printf("%d * 6248 = %d\n", data[i], 6248, data[i] * 6248);
+                printf("%d / 6248 = %d\n", data[i], 6248, data[i] / 6248);
+                printf("%d % 6248 = %d\n", data[i], 6248, data[i] % 6248);
+
+                printf("%d * -55 = %d\n", data[i], -55, data[i] * -55);
+                printf("%d / -55 = %d\n", data[i], -55, data[i] / -55);
+                printf("%d % -55 = %d\n", data[i], -55, data[i] % -55);
+
+                printf("%d * 53778227 = %d\n", data[i], 53778227, data[i] * 53778227);
+                printf("%d / 53778227 = %d\n", data[i], 53778227, data[i] / 53778227);
+                printf("%d % 53778227 = %d\n", data[i], 53778227, data[i] % 53778227);
+
+                printf("%d * 30424 = %d\n", data[i], 30424, data[i] * 30424);
+                printf("%d / 30424 = %d\n", data[i], 30424, data[i] / 30424);
+                printf("%d % 30424 = %d\n", data[i], 30424, data[i] % 30424);
+
+                printf("%d * 41 = %d\n", data[i], 41, data[i] * 41);
+                printf("%d / 41 = %d\n", data[i], 41, data[i] / 41);
+                printf("%d % 41 = %d\n", data[i], 41, data[i] % 41);
+
+                printf("%d * -140130876 = %d\n", data[i], -140130876, data[i] * -140130876);
+                printf("%d / -140130876 = %d\n", data[i], -140130876, data[i] / -140130876);
+                printf("%d % -140130876 = %d\n", data[i], -140130876, data[i] % -140130876);
+
+                printf("%d * -12566 = %d\n", data[i], -12566, data[i] * -12566);
+                printf("%d / -12566 = %d\n", data[i], -12566, data[i] / -12566);
+                printf("%d % -12566 = %d\n", data[i], -12566, data[i] % -12566);
+
+                printf("%d * 6 = %d\n", data[i], 6, data[i] * 6);
+                printf("%d / 6 = %d\n", data[i], 6, data[i] / 6);
+                printf("%d % 6 = %d\n", data[i], 6, data[i] % 6);
+
+                printf("%d * 1833369954 = %d\n", data[i], 1833369954, data[i] * 1833369954);
+                printf("%d / 1833369954 = %d\n", data[i], 1833369954, data[i] / 1833369954);
+                printf("%d % 1833369954 = %d\n", data[i], 1833369954, data[i] % 1833369954);
+
+                printf("%d * 21244 = %d\n", data[i], 21244, data[i] * 21244);
+                printf("%d / 21244 = %d\n", data[i], 21244, data[i] / 21244);
+                printf("%d % 21244 = %d\n", data[i], 21244, data[i] % 21244);
+
+                printf("%d * -82 = %d\n", data[i], -82, data[i] * -82);
+                printf("%d / -82 = %d\n", data[i], -82, data[i] / -82);
+                printf("%d % -82 = %d\n", data[i], -82, data[i] % -82);
+
+                printf("%d * -1926644112 = %d\n", data[i], -1926644112, data[i] * -1926644112);
+                printf("%d / -1926644112 = %d\n", data[i], -1926644112, data[i] / -1926644112);
+                printf("%d % -1926644112 = %d\n", data[i], -1926644112, data[i] % -1926644112);
+
+                printf("%d * -31116 = %d\n", data[i], -31116, data[i] * -31116);
+                printf("%d / -31116 = %d\n", data[i], -31116, data[i] / -31116);
+                printf("%d % -31116 = %d\n", data[i], -31116, data[i] % -31116);
+
+                printf("%d * 9 = %d\n", data[i], 9, data[i] * 9);
+                printf("%d / 9 = %d\n", data[i], 9, data[i] / 9);
+                printf("%d % 9 = %d\n", data[i], 9, data[i] % 9);
+
+                printf("%d * -340271351 = %d\n", data[i], -340271351, data[i] * -340271351);
+                printf("%d / -340271351 = %d\n", data[i], -340271351, data[i] / -340271351);
+                printf("%d % -340271351 = %d\n", data[i], -340271351, data[i] % -340271351);
+
+                printf("%d * 5082 = %d\n", data[i], 5082, data[i] * 5082);
+                printf("%d / 5082 = %d\n", data[i], 5082, data[i] / 5082);
+                printf("%d % 5082 = %d\n", data[i], 5082, data[i] % 5082);
+
+                printf("%d * 97 = %d\n", data[i], 97, data[i] * 97);
+                printf("%d / 97 = %d\n", data[i], 97, data[i] / 97);
+                printf("%d % 97 = %d\n", data[i], 97, data[i] % 97);
+
+                printf("%d * 1148221796 = %d\n", data[i], 1148221796, data[i] * 1148221796);
+                printf("%d / 1148221796 = %d\n", data[i], 1148221796, data[i] / 1148221796);
+                printf("%d % 1148221796 = %d\n", data[i], 1148221796, data[i] % 1148221796);
+
+                printf("%d * -29044 = %d\n", data[i], -29044, data[i] * -29044);
+                printf("%d / -29044 = %d\n", data[i], -29044, data[i] / -29044);
+                printf("%d % -29044 = %d\n", data[i], -29044, data[i] % -29044);
+
+                printf("%d * 16 = %d\n", data[i], 16, data[i] * 16);
+                printf("%d / 16 = %d\n", data[i], 16, data[i] / 16);
+                printf("%d % 16 = %d\n", data[i], 16, data[i] % 16);
+
+                printf("%d * 794979786 = %d\n", data[i], 794979786, data[i] * 794979786);
+                printf("%d / 794979786 = %d\n", data[i], 794979786, data[i] / 794979786);
+                printf("%d % 794979786 = %d\n", data[i], 794979786, data[i] % 794979786);
+
+                printf("%d * 17468 = %d\n", data[i], 17468, data[i] * 17468);
+                printf("%d / 17468 = %d\n", data[i], 17468, data[i] / 17468);
+                printf("%d % 17468 = %d\n", data[i], 17468, data[i] % 17468);
+
+                printf("%d * -5 = %d\n", data[i], -5, data[i] * -5);
+                printf("%d / -5 = %d\n", data[i], -5, data[i] / -5);
+                printf("%d % -5 = %d\n", data[i], -5, data[i] % -5);
+
+                printf("%d * -1488111140 = %d\n", data[i], -1488111140, data[i] * -1488111140);
+                printf("%d / -1488111140 = %d\n", data[i], -1488111140, data[i] / -1488111140);
+                printf("%d % -1488111140 = %d\n", data[i], -1488111140, data[i] % -1488111140);
+
+                printf("%d * 31521 = %d\n", data[i], 31521, data[i] * 31521);
+                printf("%d / 31521 = %d\n", data[i], 31521, data[i] / 31521);
+                printf("%d % 31521 = %d\n", data[i], 31521, data[i] % 31521);
+
+                printf("%d * 28 = %d\n", data[i], 28, data[i] * 28);
+                printf("%d / 28 = %d\n", data[i], 28, data[i] / 28);
+                printf("%d % 28 = %d\n", data[i], 28, data[i] % 28);
+
+                printf("%d * 1904118577 = %d\n", data[i], 1904118577, data[i] * 1904118577);
+                printf("%d / 1904118577 = %d\n", data[i], 1904118577, data[i] / 1904118577);
+                printf("%d % 1904118577 = %d\n", data[i], 1904118577, data[i] % 1904118577);
+
+                printf("%d * -22789 = %d\n", data[i], -22789, data[i] * -22789);
+                printf("%d / -22789 = %d\n", data[i], -22789, data[i] / -22789);
+                printf("%d % -22789 = %d\n", data[i], -22789, data[i] % -22789);
+
+                printf("%d * -70 = %d\n", data[i], -70, data[i] * -70);
+                printf("%d / -70 = %d\n", data[i], -70, data[i] / -70);
+                printf("%d % -70 = %d\n", data[i], -70, data[i] % -70);
+
+                printf("%d * -1664404202 = %d\n", data[i], -1664404202, data[i] * -1664404202);
+                printf("%d / -1664404202 = %d\n", data[i], -1664404202, data[i] / -1664404202);
+                printf("%d % -1664404202 = %d\n", data[i], -1664404202, data[i] % -1664404202);
+
+                printf("%d * -26841 = %d\n", data[i], -26841, data[i] * -26841);
+                printf("%d / -26841 = %d\n", data[i], -26841, data[i] / -26841);
+                printf("%d % -26841 = %d\n", data[i], -26841, data[i] % -26841);
+
+                printf("%d * -61 = %d\n", data[i], -61, data[i] * -61);
+                printf("%d / -61 = %d\n", data[i], -61, data[i] / -61);
+                printf("%d % -61 = %d\n", data[i], -61, data[i] % -61);
+
+                printf("%d * 1433960600 = %d\n", data[i], 1433960600, data[i] * 1433960600);
+                printf("%d / 1433960600 = %d\n", data[i], 1433960600, data[i] / 1433960600);
+                printf("%d % 1433960600 = %d\n", data[i], 1433960600, data[i] % 1433960600);
+
+                printf("%d * -22266 = %d\n", data[i], -22266, data[i] * -22266);
+                printf("%d / -22266 = %d\n", data[i], -22266, data[i] / -22266);
+                printf("%d % -22266 = %d\n", data[i], -22266, data[i] % -22266);
+
+                printf("%d * -89 = %d\n", data[i], -89, data[i] * -89);
+                printf("%d / -89 = %d\n", data[i], -89, data[i] / -89);
+                printf("%d % -89 = %d\n", data[i], -89, data[i] % -89);
+
+                printf("%d * -1147168446 = %d\n", data[i], -1147168446, data[i] * -1147168446);
+                printf("%d / -1147168446 = %d\n", data[i], -1147168446, data[i] / -1147168446);
+                printf("%d % -1147168446 = %d\n", data[i], -1147168446, data[i] % -1147168446);
+
+                printf("%d * 11072 = %d\n", data[i], 11072, data[i] * 11072);
+                printf("%d / 11072 = %d\n", data[i], 11072, data[i] / 11072);
+                printf("%d % 11072 = %d\n", data[i], 11072, data[i] % 11072);
+
+                printf("%d * -54 = %d\n", data[i], -54, data[i] * -54);
+                printf("%d / -54 = %d\n", data[i], -54, data[i] / -54);
+                printf("%d % -54 = %d\n", data[i], -54, data[i] % -54);
+
+                printf("%d * -220289303 = %d\n", data[i], -220289303, data[i] * -220289303);
+                printf("%d / -220289303 = %d\n", data[i], -220289303, data[i] / -220289303);
+                printf("%d % -220289303 = %d\n", data[i], -220289303, data[i] % -220289303);
+
+                printf("%d * 13848 = %d\n", data[i], 13848, data[i] * 13848);
+                printf("%d / 13848 = %d\n", data[i], 13848, data[i] / 13848);
+                printf("%d % 13848 = %d\n", data[i], 13848, data[i] % 13848);
+
+                printf("%d * 95 = %d\n", data[i], 95, data[i] * 95);
+                printf("%d / 95 = %d\n", data[i], 95, data[i] / 95);
+                printf("%d % 95 = %d\n", data[i], 95, data[i] % 95);
+
+                printf("%d * -1883755423 = %d\n", data[i], -1883755423, data[i] * -1883755423);
+                printf("%d / -1883755423 = %d\n", data[i], -1883755423, data[i] / -1883755423);
+                printf("%d % -1883755423 = %d\n", data[i], -1883755423, data[i] % -1883755423);
+
+                printf("%d * 11976 = %d\n", data[i], 11976, data[i] * 11976);
+                printf("%d / 11976 = %d\n", data[i], 11976, data[i] / 11976);
+                printf("%d % 11976 = %d\n", data[i], 11976, data[i] % 11976);
+
+                printf("%d * 59 = %d\n", data[i], 59, data[i] * 59);
+                printf("%d / 59 = %d\n", data[i], 59, data[i] / 59);
+                printf("%d % 59 = %d\n", data[i], 59, data[i] % 59);
+
+                printf("%d * -107423816 = %d\n", data[i], -107423816, data[i] * -107423816);
+                printf("%d / -107423816 = %d\n", data[i], -107423816, data[i] / -107423816);
+                printf("%d % -107423816 = %d\n", data[i], -107423816, data[i] % -107423816);
+
+                printf("%d * 26157 = %d\n", data[i], 26157, data[i] * 26157);
+                printf("%d / 26157 = %d\n", data[i], 26157, data[i] / 26157);
+                printf("%d % 26157 = %d\n", data[i], 26157, data[i] % 26157);
+
+                printf("%d * 123 = %d\n", data[i], 123, data[i] * 123);
+                printf("%d / 123 = %d\n", data[i], 123, data[i] / 123);
+                printf("%d % 123 = %d\n", data[i], 123, data[i] % 123);
+
+                printf("%d * -1694784290 = %d\n", data[i], -1694784290, data[i] * -1694784290);
+                printf("%d / -1694784290 = %d\n", data[i], -1694784290, data[i] / -1694784290);
+                printf("%d % -1694784290 = %d\n", data[i], -1694784290, data[i] % -1694784290);
+
+                printf("%d * -22847 = %d\n", data[i], -22847, data[i] * -22847);
+                printf("%d / -22847 = %d\n", data[i], -22847, data[i] / -22847);
+                printf("%d % -22847 = %d\n", data[i], -22847, data[i] % -22847);
+
+                printf("%d * -128 = %d\n", data[i], -128, data[i] * -128);
+                printf("%d / -128 = %d\n", data[i], -128, data[i] / -128);
+                printf("%d % -128 = %d\n", data[i], -128, data[i] % -128);
+
+                printf("%d * 132064 = %d\n", data[i], 132064, data[i] * 132064);
+                printf("%d / 132064 = %d\n", data[i], 132064, data[i] / 132064);
+                printf("%d % 132064 = %d\n", data[i], 132064, data[i] % 132064);
+
+                printf("%d * -33551872 = %d\n", data[i], -33551872, data[i] * -33551872);
+                printf("%d / -33551872 = %d\n", data[i], -33551872, data[i] / -33551872);
+                printf("%d % -33551872 = %d\n", data[i], -33551872, data[i] % -33551872);
+
+                printf("%d * 33521792 = %d\n", data[i], 33521792, data[i] * 33521792);
+                printf("%d / 33521792 = %d\n", data[i], 33521792, data[i] / 33521792);
+                printf("%d % 33521792 = %d\n", data[i], 33521792, data[i] % 33521792);
+
+                printf("%d * -134217666 = %d\n", data[i], -134217666, data[i] * -134217666);
+                printf("%d / -134217666 = %d\n", data[i], -134217666, data[i] / -134217666);
+                printf("%d % -134217666 = %d\n", data[i], -134217666, data[i] % -134217666);
+
+                printf("%d * -1073743873 = %d\n", data[i], -1073743873, data[i] * -1073743873);
+                printf("%d / -1073743873 = %d\n", data[i], -1073743873, data[i] / -1073743873);
+                printf("%d % -1073743873 = %d\n", data[i], -1073743873, data[i] % -1073743873);
+
+                printf("%d * -570425328 = %d\n", data[i], -570425328, data[i] * -570425328);
+                printf("%d / -570425328 = %d\n", data[i], -570425328, data[i] / -570425328);
+                printf("%d % -570425328 = %d\n", data[i], -570425328, data[i] % -570425328);
+
+                printf("%d * 2097409 = %d\n", data[i], 2097409, data[i] * 2097409);
+                printf("%d / 2097409 = %d\n", data[i], 2097409, data[i] / 2097409);
+                printf("%d % 2097409 = %d\n", data[i], 2097409, data[i] % 2097409);
+
+                printf("%d * -28673 = %d\n", data[i], -28673, data[i] * -28673);
+                printf("%d / -28673 = %d\n", data[i], -28673, data[i] / -28673);
+                printf("%d % -28673 = %d\n", data[i], -28673, data[i] % -28673);
+
+                printf("%d * 4177904 = %d\n", data[i], 4177904, data[i] * 4177904);
+                printf("%d / 4177904 = %d\n", data[i], 4177904, data[i] / 4177904);
+                printf("%d % 4177904 = %d\n", data[i], 4177904, data[i] % 4177904);
+
+                printf("%d * -7340036 = %d\n", data[i], -7340036, data[i] * -7340036);
+                printf("%d / -7340036 = %d\n", data[i], -7340036, data[i] / -7340036);
+                printf("%d % -7340036 = %d\n", data[i], -7340036, data[i] % -7340036);
+
+                printf("%d * -127 = %d\n", data[i], -127, data[i] * -127);
+                printf("%d / -127 = %d\n", data[i], -127, data[i] / -127);
+                printf("%d % -127 = %d\n", data[i], -127, data[i] % -127);
+
+                printf("%d * 62914496 = %d\n", data[i], 62914496, data[i] * 62914496);
+                printf("%d / 62914496 = %d\n", data[i], 62914496, data[i] / 62914496);
+                printf("%d % 62914496 = %d\n", data[i], 62914496, data[i] % 62914496);
+
+                printf("%d * 66847744 = %d\n", data[i], 66847744, data[i] * 66847744);
+                printf("%d / 66847744 = %d\n", data[i], 66847744, data[i] / 66847744);
+                printf("%d % 66847744 = %d\n", data[i], 66847744, data[i] % 66847744);
+
+                printf("%d * -1572880 = %d\n", data[i], -1572880, data[i] * -1572880);
+                printf("%d / -1572880 = %d\n", data[i], -1572880, data[i] / -1572880);
+                printf("%d % -1572880 = %d\n", data[i], -1572880, data[i] % -1572880);
+
+                printf("%d * -2099200 = %d\n", data[i], -2099200, data[i] * -2099200);
+                printf("%d / -2099200 = %d\n", data[i], -2099200, data[i] / -2099200);
+                printf("%d % -2099200 = %d\n", data[i], -2099200, data[i] % -2099200);
+
+                printf("%d * 301981696 = %d\n", data[i], 301981696, data[i] * 301981696);
+                printf("%d / 301981696 = %d\n", data[i], 301981696, data[i] / 301981696);
+                printf("%d % 301981696 = %d\n", data[i], 301981696, data[i] % 301981696);
+
+                printf("%d * 4714496 = %d\n", data[i], 4714496, data[i] * 4714496);
+                printf("%d / 4714496 = %d\n", data[i], 4714496, data[i] / 4714496);
+                printf("%d % 4714496 = %d\n", data[i], 4714496, data[i] % 4714496);
+
+                printf("%d * -524792 = %d\n", data[i], -524792, data[i] * -524792);
+                printf("%d / -524792 = %d\n", data[i], -524792, data[i] / -524792);
+                printf("%d % -524792 = %d\n", data[i], -524792, data[i] % -524792);
+
+                printf("%d * 2096896 = %d\n", data[i], 2096896, data[i] * 2096896);
+                printf("%d / 2096896 = %d\n", data[i], 2096896, data[i] / 2096896);
+                printf("%d % 2096896 = %d\n", data[i], 2096896, data[i] % 2096896);
+
+                printf("%d * 519680 = %d\n", data[i], 519680, data[i] * 519680);
+                printf("%d / 519680 = %d\n", data[i], 519680, data[i] / 519680);
+                printf("%d % 519680 = %d\n", data[i], 519680, data[i] % 519680);
+
+                printf("%d * -536870909 = %d\n", data[i], -536870909, data[i] * -536870909);
+                printf("%d / -536870909 = %d\n", data[i], -536870909, data[i] / -536870909);
+                printf("%d % -536870909 = %d\n", data[i], -536870909, data[i] % -536870909);
+
+                printf("%d * 67248128 = %d\n", data[i], 67248128, data[i] * 67248128);
+                printf("%d / 67248128 = %d\n", data[i], 67248128, data[i] / 67248128);
+                printf("%d % 67248128 = %d\n", data[i], 67248128, data[i] % 67248128);
+
+                printf("%d * 33522176 = %d\n", data[i], 33522176, data[i] * 33522176);
+                printf("%d / 33522176 = %d\n", data[i], 33522176, data[i] / 33522176);
+                printf("%d % 33522176 = %d\n", data[i], 33522176, data[i] % 33522176);
+
+                printf("%d * -4196288 = %d\n", data[i], -4196288, data[i] * -4196288);
+                printf("%d / -4196288 = %d\n", data[i], -4196288, data[i] / -4196288);
+                printf("%d % -4196288 = %d\n", data[i], -4196288, data[i] % -4196288);
+
+                printf("%d * 33562620 = %d\n", data[i], 33562620, data[i] * 33562620);
+                printf("%d / 33562620 = %d\n", data[i], 33562620, data[i] / 33562620);
+                printf("%d % 33562620 = %d\n", data[i], 33562620, data[i] % 33562620);
+
+                printf("%d * -535822332 = %d\n", data[i], -535822332, data[i] * -535822332);
+                printf("%d / -535822332 = %d\n", data[i], -535822332, data[i] / -535822332);
+                printf("%d % -535822332 = %d\n", data[i], -535822332, data[i] % -535822332);
+
+                printf("%d * -36 = %d\n", data[i], -36, data[i] * -36);
+                printf("%d / -36 = %d\n", data[i], -36, data[i] / -36);
+                printf("%d % -36 = %d\n", data[i], -36, data[i] % -36);
+
+                printf("%d * 133693376 = %d\n", data[i], 133693376, data[i] * 133693376);
+                printf("%d / 133693376 = %d\n", data[i], 133693376, data[i] / 133693376);
+                printf("%d % 133693376 = %d\n", data[i], 133693376, data[i] % 133693376);
+
+                printf("%d * -1073737984 = %d\n", data[i], -1073737984, data[i] * -1073737984);
+                printf("%d / -1073737984 = %d\n", data[i], -1073737984, data[i] / -1073737984);
+                printf("%d % -1073737984 = %d\n", data[i], -1073737984, data[i] % -1073737984);
+
+                printf("%d * 142606328 = %d\n", data[i], 142606328, data[i] * 142606328);
+                printf("%d / 142606328 = %d\n", data[i], 142606328, data[i] / 142606328);
+                printf("%d % 142606328 = %d\n", data[i], 142606328, data[i] % 142606328);
+
+                printf("%d * 2097656 = %d\n", data[i], 2097656, data[i] * 2097656);
+                printf("%d / 2097656 = %d\n", data[i], 2097656, data[i] / 2097656);
+                printf("%d % 2097656 = %d\n", data[i], 2097656, data[i] % 2097656);
+
+                printf("%d * -33550336 = %d\n", data[i], -33550336, data[i] * -33550336);
+                printf("%d / -33550336 = %d\n", data[i], -33550336, data[i] / -33550336);
+                printf("%d % -33550336 = %d\n", data[i], -33550336, data[i] % -33550336);
+
+                printf("%d * -67116800 = %d\n", data[i], -67116800, data[i] * -67116800);
+                printf("%d / -67116800 = %d\n", data[i], -67116800, data[i] / -67116800);
+                printf("%d % -67116800 = %d\n", data[i], -67116800, data[i] % -67116800);
+
+                printf("%d * 1073741700 = %d\n", data[i], 1073741700, data[i] * 1073741700);
+                printf("%d / 1073741700 = %d\n", data[i], 1073741700, data[i] / 1073741700);
+                printf("%d % 1073741700 = %d\n", data[i], 1073741700, data[i] % 1073741700);
+
+                printf("%d * 129088 = %d\n", data[i], 129088, data[i] * 129088);
+                printf("%d / 129088 = %d\n", data[i], 129088, data[i] / 129088);
+                printf("%d % 129088 = %d\n", data[i], 129088, data[i] % 129088);
+
+                printf("%d * 2031680 = %d\n", data[i], 2031680, data[i] * 2031680);
+                printf("%d / 2031680 = %d\n", data[i], 2031680, data[i] / 2031680);
+                printf("%d % 2031680 = %d\n", data[i], 2031680, data[i] % 2031680);
+
+                printf("%d * 540736 = %d\n", data[i], 540736, data[i] * 540736);
+                printf("%d / 540736 = %d\n", data[i], 540736, data[i] / 540736);
+                printf("%d % 540736 = %d\n", data[i], 540736, data[i] % 540736);
+
+                printf("%d * -66847744 = %d\n", data[i], -66847744, data[i] * -66847744);
+                printf("%d / -66847744 = %d\n", data[i], -66847744, data[i] / -66847744);
+                printf("%d % -66847744 = %d\n", data[i], -66847744, data[i] % -66847744);
+
+                printf("%d * 16792576 = %d\n", data[i], 16792576, data[i] * 16792576);
+                printf("%d / 16792576 = %d\n", data[i], 16792576, data[i] / 16792576);
+                printf("%d % 16792576 = %d\n", data[i], 16792576, data[i] % 16792576);
+
+                printf("%d * -134152064 = %d\n", data[i], -134152064, data[i] * -134152064);
+                printf("%d / -134152064 = %d\n", data[i], -134152064, data[i] / -134152064);
+                printf("%d % -134152064 = %d\n", data[i], -134152064, data[i] % -134152064);
+
+                printf("%d * -134214144 = %d\n", data[i], -134214144, data[i] * -134214144);
+                printf("%d / -134214144 = %d\n", data[i], -134214144, data[i] / -134214144);
+                printf("%d % -134214144 = %d\n", data[i], -134214144, data[i] % -134214144);
+
+                printf("%d * -64 = %d\n", data[i], -64, data[i] * -64);
+                printf("%d / -64 = %d\n", data[i], -64, data[i] / -64);
+                printf("%d % -64 = %d\n", data[i], -64, data[i] % -64);
+
+                printf("%d * 114560 = %d\n", data[i], 114560, data[i] * 114560);
+                printf("%d / 114560 = %d\n", data[i], 114560, data[i] / 114560);
+                printf("%d % 114560 = %d\n", data[i], 114560, data[i] % 114560);
+
+                printf("%d * 7169 = %d\n", data[i], 7169, data[i] * 7169);
+                printf("%d / 7169 = %d\n", data[i], 7169, data[i] / 7169);
+                printf("%d % 7169 = %d\n", data[i], 7169, data[i] % 7169);
+
+                printf("%d * 2097407 = %d\n", data[i], 2097407, data[i] * 2097407);
+                printf("%d / 2097407 = %d\n", data[i], 2097407, data[i] / 2097407);
+                printf("%d % 2097407 = %d\n", data[i], 2097407, data[i] % 2097407);
+
+                printf("%d * -2143322112 = %d\n", data[i], -2143322112, data[i] * -2143322112);
+                printf("%d / -2143322112 = %d\n", data[i], -2143322112, data[i] / -2143322112);
+                printf("%d % -2143322112 = %d\n", data[i], -2143322112, data[i] % -2143322112);
+
+                printf("%d * -1046526 = %d\n", data[i], -1046526, data[i] * -1046526);
+                printf("%d / -1046526 = %d\n", data[i], -1046526, data[i] / -1046526);
+                printf("%d % -1046526 = %d\n", data[i], -1046526, data[i] % -1046526);
+
+                printf("%d * -33814528 = %d\n", data[i], -33814528, data[i] * -33814528);
+                printf("%d / -33814528 = %d\n", data[i], -33814528, data[i] / -33814528);
+                printf("%d % -33814528 = %d\n", data[i], -33814528, data[i] % -33814528);
+
+                printf("%d * -33553922 = %d\n", data[i], -33553922, data[i] * -33553922);
+                printf("%d / -33553922 = %d\n", data[i], -33553922, data[i] / -33553922);
+                printf("%d % -33553922 = %d\n", data[i], -33553922, data[i] % -33553922);
+
+                printf("%d * 258040 = %d\n", data[i], 258040, data[i] * 258040);
+                printf("%d / 258040 = %d\n", data[i], 258040, data[i] / 258040);
+                printf("%d % 258040 = %d\n", data[i], 258040, data[i] % 258040);
+
+                printf("%d * 1308672 = %d\n", data[i], 1308672, data[i] * 1308672);
+                printf("%d / 1308672 = %d\n", data[i], 1308672, data[i] / 1308672);
+                printf("%d % 1308672 = %d\n", data[i], 1308672, data[i] % 1308672);
+
+                printf("%d * 33686016 = %d\n", data[i], 33686016, data[i] * 33686016);
+                printf("%d / 33686016 = %d\n", data[i], 33686016, data[i] / 33686016);
+                printf("%d % 33686016 = %d\n", data[i], 33686016, data[i] % 33686016);
+
+                printf("%d * -267911169 = %d\n", data[i], -267911169, data[i] * -267911169);
+                printf("%d / -267911169 = %d\n", data[i], -267911169, data[i] / -267911169);
+                printf("%d % -267911169 = %d\n", data[i], -267911169, data[i] % -267911169);
+
+                printf("%d * 268369918 = %d\n", data[i], 268369918, data[i] * 268369918);
+                printf("%d / 268369918 = %d\n", data[i], 268369918, data[i] / 268369918);
+                printf("%d % 268369918 = %d\n", data[i], 268369918, data[i] % 268369918);
+
+                printf("%d * -536871392 = %d\n", data[i], -536871392, data[i] * -536871392);
+                printf("%d / -536871392 = %d\n", data[i], -536871392, data[i] / -536871392);
+                printf("%d % -536871392 = %d\n", data[i], -536871392, data[i] % -536871392);
+
+                printf("%d * 1049536 = %d\n", data[i], 1049536, data[i] * 1049536);
+                printf("%d / 1049536 = %d\n", data[i], 1049536, data[i] / 1049536);
+                printf("%d % 1049536 = %d\n", data[i], 1049536, data[i] % 1049536);
+
+                printf("%d * 16768768 = %d\n", data[i], 16768768, data[i] * 16768768);
+                printf("%d / 16768768 = %d\n", data[i], 16768768, data[i] / 16768768);
+                printf("%d % 16768768 = %d\n", data[i], 16768768, data[i] % 16768768);
+
+                printf("%d * -2143289376 = %d\n", data[i], -2143289376, data[i] * -2143289376);
+                printf("%d / -2143289376 = %d\n", data[i], -2143289376, data[i] / -2143289376);
+                printf("%d % -2143289376 = %d\n", data[i], -2143289376, data[i] % -2143289376);
+
+                printf("%d * 541065280 = %d\n", data[i], 541065280, data[i] * 541065280);
+                printf("%d / 541065280 = %d\n", data[i], 541065280, data[i] / 541065280);
+                printf("%d % 541065280 = %d\n", data[i], 541065280, data[i] % 541065280);
+
+                printf("%d * 545259648 = %d\n", data[i], 545259648, data[i] * 545259648);
+                printf("%d / 545259648 = %d\n", data[i], 545259648, data[i] / 545259648);
+                printf("%d % 545259648 = %d\n", data[i], 545259648, data[i] % 545259648);
+
+                printf("%d * 1179632 = %d\n", data[i], 1179632, data[i] * 1179632);
+                printf("%d / 1179632 = %d\n", data[i], 1179632, data[i] / 1179632);
+                printf("%d % 1179632 = %d\n", data[i], 1179632, data[i] % 1179632);
+
+                printf("%d * 33292286 = %d\n", data[i], 33292286, data[i] * 33292286);
+                printf("%d / 33292286 = %d\n", data[i], 33292286, data[i] / 33292286);
+                printf("%d % 33292286 = %d\n", data[i], 33292286, data[i] % 33292286);
+
+                printf("%d * 24577 = %d\n", data[i], 24577, data[i] * 24577);
+                printf("%d / 24577 = %d\n", data[i], 24577, data[i] / 24577);
+                printf("%d % 24577 = %d\n", data[i], 24577, data[i] % 24577);
+
+                printf("%d * 134152196 = %d\n", data[i], 134152196, data[i] * 134152196);
+                printf("%d / 134152196 = %d\n", data[i], 134152196, data[i] / 134152196);
+                printf("%d % 134152196 = %d\n", data[i], 134152196, data[i] % 134152196);
+
+                printf("%d * -489472 = %d\n", data[i], -489472, data[i] * -489472);
+                printf("%d / -489472 = %d\n", data[i], -489472, data[i] / -489472);
+                printf("%d % -489472 = %d\n", data[i], -489472, data[i] % -489472);
+
+                printf("%d * 119 = %d\n", data[i], 119, data[i] * 119);
+                printf("%d / 119 = %d\n", data[i], 119, data[i] / 119);
+                printf("%d % 119 = %d\n", data[i], 119, data[i] % 119);
+
+                printf("%d * -118784 = %d\n", data[i], -118784, data[i] * -118784);
+                printf("%d / -118784 = %d\n", data[i], -118784, data[i] / -118784);
+                printf("%d % -118784 = %d\n", data[i], -118784, data[i] % -118784);
+
+                printf("%d * -4129792 = %d\n", data[i], -4129792, data[i] * -4129792);
+                printf("%d / -4129792 = %d\n", data[i], -4129792, data[i] / -4129792);
+                printf("%d % -4129792 = %d\n", data[i], -4129792, data[i] % -4129792);
+
+                printf("%d * 98288 = %d\n", data[i], 98288, data[i] * 98288);
+                printf("%d / 98288 = %d\n", data[i], 98288, data[i] / 98288);
+                printf("%d % 98288 = %d\n", data[i], 98288, data[i] % 98288);
+
+                printf("%d * 134215688 = %d\n", data[i], 134215688, data[i] * 134215688);
+                printf("%d / 134215688 = %d\n", data[i], 134215688, data[i] / 134215688);
+                printf("%d % 134215688 = %d\n", data[i], 134215688, data[i] % 134215688);
+
+                printf("%d * -3940352 = %d\n", data[i], -3940352, data[i] * -3940352);
+                printf("%d / -3940352 = %d\n", data[i], -3940352, data[i] / -3940352);
+                printf("%d % -3940352 = %d\n", data[i], -3940352, data[i] % -3940352);
+
+                printf("%d * 8388472 = %d\n", data[i], 8388472, data[i] * 8388472);
+                printf("%d / 8388472 = %d\n", data[i], 8388472, data[i] / 8388472);
+                printf("%d % 8388472 = %d\n", data[i], 8388472, data[i] % 8388472);
+
+                printf("%d * -16711679 = %d\n", data[i], -16711679, data[i] * -16711679);
+                printf("%d / -16711679 = %d\n", data[i], -16711679, data[i] / -16711679);
+                printf("%d % -16711679 = %d\n", data[i], -16711679, data[i] % -16711679);
+
+                printf("%d * -536805120 = %d\n", data[i], -536805120, data[i] * -536805120);
+                printf("%d / -536805120 = %d\n", data[i], -536805120, data[i] / -536805120);
+                printf("%d % -536805120 = %d\n", data[i], -536805120, data[i] % -536805120);
+
+                printf("%d * 1556480 = %d\n", data[i], 1556480, data[i] * 1556480);
+                printf("%d / 1556480 = %d\n", data[i], 1556480, data[i] / 1556480);
+                printf("%d % 1556480 = %d\n", data[i], 1556480, data[i] % 1556480);
+
+                printf("%d * 1073774608 = %d\n", data[i], 1073774608, data[i] * 1073774608);
+                printf("%d / 1073774608 = %d\n", data[i], 1073774608, data[i] / 1073774608);
+                printf("%d % 1073774608 = %d\n", data[i], 1073774608, data[i] % 1073774608);
+
+                printf("%d * 34603006 = %d\n", data[i], 34603006, data[i] * 34603006);
+                printf("%d / 34603006 = %d\n", data[i], 34603006, data[i] / 34603006);
+                printf("%d % 34603006 = %d\n", data[i], 34603006, data[i] % 34603006);
+
+                printf("%d * -2097080 = %d\n", data[i], -2097080, data[i] * -2097080);
+                printf("%d / -2097080 = %d\n", data[i], -2097080, data[i] / -2097080);
+                printf("%d % -2097080 = %d\n", data[i], -2097080, data[i] % -2097080);
+
+                printf("%d * 117440528 = %d\n", data[i], 117440528, data[i] * 117440528);
+                printf("%d / 117440528 = %d\n", data[i], 117440528, data[i] / 117440528);
+                printf("%d % 117440528 = %d\n", data[i], 117440528, data[i] % 117440528);
+
+                printf("%d * -67107072 = %d\n", data[i], -67107072, data[i] * -67107072);
+                printf("%d / -67107072 = %d\n", data[i], -67107072, data[i] / -67107072);
+                printf("%d % -67107072 = %d\n", data[i], -67107072, data[i] % -67107072);
+
+                i = i + 1;
+        }
+        return 0;
+}
