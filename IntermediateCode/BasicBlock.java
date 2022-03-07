@@ -1,13 +1,17 @@
 package IntermediateCode;
 
 import Global.Pair;
-import Global.RedBlackTree;
 import Global.Settings;
 import Global.LogBuffer;
-
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.ArrayList;
+import Global.RedBlackTree;
+import java.util.LinkedList;
+import java.util.Collections;
 import java.util.stream.Collectors;
 import MipsObjectCode.MipsAssembly;
+import java.util.NoSuchElementException;
 import IntermediateCode.Operands.Function;
 import IntermediateCode.Operands.TagString;
 import IntermediateCode.Operands.GlobalVariable;
