@@ -1,0 +1,101 @@
+
+
+// һЩ��������  0\1֮���滻Ϊ���� �������ʽ 
+const int const_name1 = 2+3;
+const int const_name_2 = 8-(7-2), _const_name3 = 0, const_name4_=6;
+const int const_name5[2+3] = {2+3,9-6,8-(7-2),(2+1)+1,0}; 
+const int const_name_6[9-6] = {0,0,1*(+2)}, _const_name7[(2+1)+1] = {0,0,3,9}, const_name8_[2] = {7,6*9/6};  // ��ֵ������͸�ά���ȶ�Ӧ
+const int const_name9[1][8-(7-2)] = {{1,2,3}}; 
+const int const_name_10[1][1] = {{-78549321}}, _const_name11[2][3/1] = {{8,0,3},{9,1,9}};
+//һЩ��������
+int var_name1 = 9-6; //���Ӵ�����
+int var_name_2 = 7%4, _var_name3, var_name4_= (2+1)+1;
+int var_name5[7%4]; 
+int var_name_6[7%4] = {(2+1)+1,7*6-9,6-7+8-(12%5)}, _var_name7[3*8/8], var_name8_[2];  // ��ֵ������͸�ά���ȶ�Ӧ
+int var_name9[8][3]; 
+int var_name_10[1][2*3/2+3] = {{7,4,0,6,1,6}}, _var_name11[2][1] = {{0},{0}}, var_name12_[2][3/1] = {{8,0,3},{9,1,9}};
+
+//һЩ�������ʽ
+/*2+3 9-6 8-(7-2) (2+1)+1 
+1*2 1*(6/2) 3*8/8 7%4*/ 
+
+void fun_name1_() {  // ¼��2������ȴ�С�� 
+	const int fun1_const_1 = 9+19;
+	int fun1_var1__ =  fun1_const_1 + const_name5[4-3] - var_name_10[1][2];
+	;
+	int fun1_var2, fun1_var3;
+	fun1_var2 = getint();
+	fun1_var3 = getint();
+	if(fun1_var2 == fun1_var3)
+		printf("fun_name1_: two numbers are equal %d = %d\n",fun1_var2, fun1_var3); 
+	if(fun1_var2 > fun1_var3) {
+		fun1_var1__ = fun1_var2 - fun1_var3;
+		printf("fun_name1_:  fun1_var2 > fun1_var3 %d > %d, %d-%d = %d\n",fun1_var2, fun1_var3,fun1_var2, fun1_var3,fun1_var1__);
+	} else if(fun1_var2 < fun1_var3) {
+		fun1_var1__ = fun1_var3 - fun1_var2;
+		printf("fun_name1_:  fun1_var2 < fun1_var3 %d < %d, %d-%d = %d\n",fun1_var2, fun1_var3,fun1_var3, fun1_var2,fun1_var1__);
+	}
+	return;
+}
+
+int fun_name2(int fun2_para1[], int fun2_para2) { //��������֮�� 
+	int fun2_ans = 0;
+	while(fun2_para2>0 && !0) {
+		fun2_ans = fun2_ans + fun2_para1[fun2_para2-1];
+		fun2_para2 = fun2_para2 - 1;
+	}
+	return fun2_ans;
+}
+
+int fun_name3(int fun3_para1[][3], int fun3_para2) {  //��������Ϊ3�ľ��� ֮�� 
+	int fun3_ans = 0;
+	while(fun3_para2>0 || !1) {
+		fun3_ans = fun3_ans + fun_name2(fun3_para1[fun3_para2-1],3);
+		fun3_para2 = fun3_para2 - 1;
+	}
+	return fun3_ans;
+}
+
+int fun_name4(int fun4_para){
+	if(1){}
+	//if(var_name1 != var_name5[3]) {}
+	//if(const_name1 != const_name5[3]) {}
+	if(const_name1 != var_name1) {}
+	if(fun4_para <= 0) {
+		
+	}
+	return 0;
+}
+
+
+int fun_name5(int fun5_para1, int fun5_para2) {  // �ó˷�д�ݣ����16�η� 
+	const int fun5_const = 16; 
+	int fun5_var = 0;
+	int ans = 1;
+	while(fun5_para2 >= 1) {
+		fun5_para2 = fun5_para2 - 1;
+		//printf("%d\n",fun5_para2);
+		fun5_var = fun5_var+1;
+		if(fun5_var == 16) break;
+		else {
+			ans = ans*fun5_para1;
+			//printf("%d\n",fun5_para1);
+			continue;	
+		}
+		printf("fun_name5: went to an inaccessible place\n"); 
+	}
+	return ans;
+}
+
+
+int main() {
+	printf("19373576\n");
+	fun_name1_();
+	printf("main: sum of var_name12_ : %d\n",fun_name3(var_name12_,2)); 
+	fun_name4(var_name1);;
+	int a = 2, b = 3;
+	printf("main: %d^%d(%d<=16) = %d\n",a,b,b,fun_name5(a,b));
+	printf("%d %d %d %d %d %d %d %d %d %d %d\n",const_name1,const_name_2,_const_name3,const_name4_,const_name5[3],const_name_6[2],_const_name7[0],const_name8_[1],const_name9[0][2],const_name_10[0][0],_const_name11[1][1]);
+	printf("%d %d %d %d %d %d %d %d %d %d %d %d",var_name1,var_name_2,_var_name3,var_name4_,var_name5[2],var_name_6[2],_var_name7[0],var_name8_[1],var_name9[0][2],var_name_10[0][0],_var_name11[1][0],var_name12_[1][2]);
+	return 0;
+}

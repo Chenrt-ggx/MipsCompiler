@@ -1,0 +1,62 @@
+const int const_val_1[2+1]={1,2,3},const_val_2[2][2]={{4,5},{6,7}};
+int var_val_0[4*2],var_val_1[4/2]={8,9},var_val_2[4/2][1*2]={{3*3,5+7},{12/4,1-1}};
+void show_global(){
+	printf("var_val_1[0]=%d,var_val_1[1]=%d\n",var_val_1[0],var_val_1[1]);
+}
+int func1(int a[],int size_a,int b[][2],int size_b){
+	/* this is Decl test */
+	int c[2][2]={{a[0],b[0][0]},{b[1][1],a[1]}};
+	const int d[2]={const_val_1[2],const_val_2[1][0]+const_val_1[1]};
+	int p1=(c[0][0]+c[0][1]+c[1][0]+c[1][1])%size_a;
+	int i=size_a-1;
+	while(i>=0){
+		a[p1]=a[p1]+a[i]+b[0][i%2];
+		i=i-1;
+	}
+	int p2=(d[0]+d[1])%2,p3=(d[0]+d[1])/2%size_b;
+	int j=size_b-1,k=1;
+	while(j>=0){
+		while(k>=0){
+			b[p2][p3]=b[p2][p3]+b[j][k];
+			k=k-1;
+		}
+		j=j-1;
+	}
+	printf("a[%d]=%d,b[%d][%d]=%d\n",p1,a[p1],p2,p3,b[p2][p3]);
+	return a[p1]+b[p2][p3];
+}
+void func2(int a[],int b[][2]){
+	/* this is global-local test */
+	int i=1;
+	while(i>=0){
+		a[i]=a[i]+var_val_1[i];
+		i=i-1;
+	}
+	int j=1,k=1;
+	while(j>=0){
+		while(k>=0){
+			b[i][j]=b[i][j]+var_val_2[i][j];
+			k=k-1;
+		}
+		j=j-1;
+	}
+	show_global();
+	int var_val_1[2]={0,0};
+	var_val_1[0]=func1(a,2,b,2);
+	var_val_1[1]=var_val_1[0]%123;
+	printf("%d,%d\n",var_val_1[0],var_val_1[1]);
+}
+int main(){
+//	freopen("input2.txt","r",stdin);
+//	freopen("output2.txt","w",stdout);
+	printf("19373650\n");
+	int a[2][2]={{func1(var_val_1,2,var_val_2,2),func1(var_val_0,8,var_val_2,2)},{func1(var_val_2[0],2,var_val_2,2),func1(var_val_2[1],2,var_val_2,2)}};
+	int b[2];
+	b[0]=getint();
+	b[1]=getint();
+	b[(b[0]+b[1])%2]=b[0]+b[1];
+	func2(b,a);
+	show_global();
+	printf("test is over\n");
+	return 0;
+}

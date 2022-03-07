@@ -1,14 +1,11 @@
 package IntermediateCode;
 
 import Global.Pair;
-import Global.AvlTree;
+import Global.RedBlackTree;
 import Global.Settings;
 import Global.LogBuffer;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Collections;
+
+import java.util.*;
 import java.util.stream.Collectors;
 import MipsObjectCode.MipsAssembly;
 import IntermediateCode.Operands.Function;
@@ -28,7 +25,7 @@ public class BasicBlock {
     private final HashSet<BasicBlock> successor;
     private final HashSet<BasicBlock> predecessor;
     private ArrayList<AbstractElement> intermediates;
-    private final HashMap<AbstractLeftValue, AvlTree<Integer>> variablePlace;
+    private final HashMap<AbstractLeftValue, RedBlackTree<Integer>> variablePlace;
 
     private final HashSet<AbstractLeftValue> defSet;
     private final HashSet<AbstractLeftValue> useSet;
@@ -63,11 +60,11 @@ public class BasicBlock {
     }
 
     public int nextIndexOf(AbstractLeftValue abstractLeftValue, int index) {
-        AvlTree<Integer> placeSet = variablePlace.get(abstractLeftValue);
+        RedBlackTree<Integer> placeSet = variablePlace.get(abstractLeftValue);
         try {
             return placeSet.upperBound(index);
         }
-        catch (NullPointerException e) {
+        catch (NoSuchElementException e) {
             return Integer.MAX_VALUE;
         }
     }
@@ -382,9 +379,9 @@ public class BasicBlock {
             intermediates.get(i).pushUpUse(atomUseSet);
             for (AbstractLeftValue j : atomDefSet) {
                 if (!variablePlace.containsKey(j)) {
-                    AvlTree<Integer> avlTree = new AvlTree<>();
-                    avlTree.insert(i);
-                    variablePlace.put(j, avlTree);
+                    RedBlackTree<Integer> redBlackTree = new RedBlackTree<>();
+                    redBlackTree.insert(i);
+                    variablePlace.put(j, redBlackTree);
                 }
                 else {
                     variablePlace.get(j).insert(i);
@@ -392,9 +389,9 @@ public class BasicBlock {
             }
             for (AbstractLeftValue j : atomUseSet) {
                 if (!variablePlace.containsKey(j)) {
-                    AvlTree<Integer> avlTree = new AvlTree<>();
-                    avlTree.insert(i);
-                    variablePlace.put(j, avlTree);
+                    RedBlackTree<Integer> redBlackTree = new RedBlackTree<>();
+                    redBlackTree.insert(i);
+                    variablePlace.put(j, redBlackTree);
                 }
                 else {
                     variablePlace.get(j).insert(i);

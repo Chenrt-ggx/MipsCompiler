@@ -1,0 +1,111 @@
+/*
+ * This is a notation
+ * Good luck and hope you have a nice day :)
+ */
+
+// # Decl
+
+const int a = -+-1;
+const int b= 7 * 9, c = 0;
+
+int d = 8;
+int e, f = -7;
+
+const int g[3] = {29, -29, 0};
+const int h[3][2/1] = {{1, 2}, {3, 4}, {5*1, 2+(((2)))+1*2}};
+
+int i[300], j[2][1] = {{2}, {-9}};
+
+void func() {}
+
+int func2() {
+    ;
+    if (!0) {
+        return -1;
+    }
+    return 0;
+}
+
+int i_t_e_r(int b) { // recursion
+    printf("@%d ", b);
+    if (b > 0) {
+        return b * i_t_e_r(b - 1) - 1;
+    } else {
+        return b - 1;
+    }
+    return 0+1*3;
+}
+
+int iter_pro(int b_) {
+    printf("*%d ", b_);
+    if (b_ < 0) {
+        return -1;
+    } else {
+        return iter_pro(b_ - 1) + i_t_e_r(b_);
+    }
+    return 0;
+}
+
+void change(int k, int m[], int n[][1]) {
+    k = k - 1;
+    m[0] = m[0] - 1;
+    n[0][0] = n[0][0] - 1;
+    return;
+}
+
+int main() {
+    int k, l = 9;
+    int m[9];
+    int n[2][1] = {{1}, {5}};
+    k = getint();
+    l = getint();
+    n[0][0] = getint();
+    printf("19231133\n");
+    printf("%d\n%d\n%d\n", func2()+i_t_e_r(k), i_t_e_r(l), i_t_e_r(i_t_e_r(0)));
+    printf("%d\n", iter_pro(iter_pro(iter_pro(n[0][0])) + 1));
+    printf("before: %d, %d, %d\n", l, i[0], n[0][0]);
+    change(l, i, n);
+    printf("after: %d, %d, %d\n", l, i[0], n[0][0]);
+    while (7 == 7) {
+        if (-8 >= -7) {
+            continue;
+        }
+        printf("Con");
+        while (1 || 0) {
+            if (4 <= 3 && 0 > -1) {
+                continue;
+            }
+            printf("gra");
+            while (1 && 1 || 1) {
+                if (-1 < -9 || 0 < -1 || -93 < -93) {
+                    continue;
+                    continue;
+                }
+                printf("tul");
+                while (1 && 1 && 1 && 1) {
+                    if (0 > 0) {
+                        continue;
+                    }
+                    printf("ati");
+                    while (1 || 0 || 0 || 0) {
+                        if (0 && 1) {
+                            continue;
+                        } else {
+                            printf("on!\n");
+                        }
+                        break;
+                        break;
+                    }
+                    break;
+                    break;
+                }
+                break;
+                continue;
+            }
+            break;
+            continue;
+        }
+        break;
+    }
+    return 0;
+}

@@ -92,7 +92,7 @@ public class MipsCodeDumper {
                 LogBuffer.code.add(builder.toString());
             }
             if (Settings.objectCodeToStdout) {
-                System.out.println(builder.toString());
+                System.out.println(builder);
             }
         });
         if (Settings.objectCodeToFile) {

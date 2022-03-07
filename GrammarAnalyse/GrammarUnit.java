@@ -104,10 +104,10 @@ public abstract class GrammarUnit {
 
     protected void log() {
         if (Settings.grammarAnalyseToFile) {
-            LogBuffer.buffer.add("<" + toString() + ">");
+            LogBuffer.buffer.add("<" + this + ">");
         }
         if (Settings.grammarAnalyseToStdout) {
-            String out = "::         <" + toString() + ">         ::";
+            String out = "::         <" + this + ">         ::";
             String upAndDown = out.replaceAll(".?", ":").substring(1);
             System.out.println("\n" + upAndDown);
             System.out.println(out);

@@ -1,0 +1,364 @@
+int matrix[10][10];
+int seed, buf[510], src[510];
+
+const int mul = 19260817, add = 23333;
+const int reflect1[50] = {-711942876, -1060809599, 1758839997, 423174272, 1412407466,
+	375872692, 1543568839, 915987033, 698198080, -2143283456,
+	2059223660, -34179219, 378910912, 1498631475, -1853883889,
+	1640319187, 1163758804, -931895085, -2061833199, -1556924115,
+	-845977183, 1847164385, 1665603629, -1703548726, -344459473,
+	-1589712906, 149613887, -396337451, 1064449581, -307889588,
+	1661525227, -1284472061, -499795837, 255615189, -729577785,
+	-1032749994, -768262768, -597607786, 851269079, 1196148301,
+	-429326133, 882810866, 115460578, 1991442912, 623829448,
+	-1012146871, -1954608496, 884135322, -1105545598, 1517757891
+};
+const int reflect2[10][10] = {
+	{-1152785601, 1891446969, 938484211, -1596516698, 1681072330,
+	1317584163, -484821643, 489138378, -1535659242, 2041004366},
+	{128222498, 1090169129, -347746822, -326257601, -1366930863,
+	-1094012930, -582270185, -1129905221, -700344045, 851179157},
+	{-823961496, 2103453081, -402114823, 2139806715, -732814375,
+	-923421957, -335456832, 1792163742, 303341687, 2135186416},
+	{1302967469, 1623817872, 898372270, -812618050, -1403178881,
+	-1394347584, -164180074, -121807758, -1732202680, 1205353033},
+	{-1776328495, 958769364, 47496017, -1384738865, 1751940200,
+	-97172568, 502251849, -1749005702, -921534697, -1202408560},
+	{307728049, -1625382311, 1271106322, 309930583, 2007032850,
+	1074055550, 2036831205, -492323543, -252604752, 1295820596},
+	{728458994, 1673642498, -51943305, -1854253096, -1024571774,
+	1430035460, 1705232663, -1803769826, -1485716863, -1192520056},
+	{-1503793409, 2027983592, -1911831470, -1387735054, -274170342,
+	-39878981, 1475936537, 1944942266, 1579815806, 1734290467},
+	{1606724733, -1839064934, 1749681186, 1409364573, -68127266,
+	1869282840, 1574753938, 1959861217, -425501077, -1281736928},
+	{-1304579021, -1777897472, -1921297034, 1623258471, -226241316,
+	824482268, -1840038765, -1238621050, 1453319654, -1338682930}
+};
+
+int rand() {
+	seed = mul * seed + add;
+	return seed;
+}
+
+void printOne(int num) {
+	num = num * reflect1[(num % 50 + 50) % 50];
+	int select = (rand() % 4 + 4) % 4;
+	if (select == 0) printf("%d", num);
+	else if (select == 1) printf("ooo%d", num);
+	else if (select == 2) printf("%dooo", num);
+	else if (select == 3) printf("ooo%dooo", num);
+	printf("\n");
+	return;
+}
+
+void printTwo(int num1, int num2) {
+	num1 = num1 * reflect2[(num1 % 10 + 10) % 10][(num2 % 10 + 10) % 10];
+	num2 = num2 * reflect2[(num2 % 10 + 10) % 10][(num1 % 10 + 10) % 10];
+	int select = (rand() % 8 + 8) % 8;
+	if (select == 0) printf("%d%d", num1, num2);
+	else if (select == 1) printf("ppp%d%d", num1, num2);
+	else if (select == 2) printf("%d%dppp", num1, num2);
+	else if (select == 3) printf("ppp%d%dppp", num1, num2);
+	else if (select == 4) printf("%dppp%d", num1, num2);
+	else if (select == 5) printf("ppp%dppp%d", num1, num2);
+	else if (select == 6) printf("%dppp%dppp", num1, num2);
+	else printf("ppp%dppp%dppp", num1, num2);
+	printf("\n");
+	return;
+}
+
+void printThree(int num1, int num2, int num3) {
+	num1 = num1 * reflect1[(num1 % 50 + 50) % 50];
+	num2 = num2 * reflect2[(num2 % 10 + 10) % 10][(num3 % 10 + 10) % 10];
+	num3 = num3 * reflect2[(num3 % 10 + 10) % 10][(num2 % 10 + 10) % 10];
+	int select = (rand() % 16 + 16) % 16;
+	if (select == 0) printf("%d%d%d", num1, num2, num3);
+	else if (select == 1) printf("qqq%d%d%d", num1, num2, num3);
+	else if (select == 2) printf("%d%d%dqqq", num1, num2, num3);
+	else if (select == 3) printf("qqq%d%d%dqqq", num1, num2, num3);
+	else if (select == 4) printf("%dqqq%d%d", num1, num2, num3);
+	else if (select == 5) printf("qqq%dqqq%d%d", num1, num2, num3);
+	else if (select == 6) printf("%dqqq%d%dqqq", num1, num2, num3);
+	else if (select == 7) printf("qqq%dqqq%d%dqqq", num1, num2, num3);
+	else if (select == 8) printf("%d%dqqq%d", num1, num2, num3);
+	else if (select == 9) printf("qqq%d%dqqq%d", num1, num2, num3);
+	else if (select == 10) printf("%d%dqqq%dqqq", num1, num2, num3);
+	else if (select == 11) printf("qqq%d%dqqq%dqqq", num1, num2, num3);
+	else if (select == 12) printf("%dqqq%dqqq%d", num1, num2, num3);
+	else if (select == 13) printf("qqq%dqqq%dqqq%d", num1, num2, num3);
+	else if (select == 14) printf("%dqqq%dqqq%dqqq", num1, num2, num3);
+	else  printf("qqq%dqqq%dqqq%dqqq", num1, num2, num3);
+	printf("\n");
+	return;
+}
+
+void initArr(int arr[], int total) {
+	int i = 0;
+	while (i < total) {
+		arr[i] = rand();
+		i = i + 1;
+	}
+	return;
+}
+
+void initDouble(int arr[][10], int total) {
+	int i = 0;
+	while (i < total) {
+		initArr(arr[i], total);
+		i = i + 1;
+	}
+	return;
+}
+
+int calSum(int arr[], int total) {
+	int i = 0, ans = 0;
+	while (i < total) {
+		ans = ans + arr[i];
+		if (i % 2) ans = +ans;
+		else ans = -ans;
+		i = i + 1;
+	}
+	return ans;
+}
+
+void checkArr(int arr[], int total) {
+	// for (int i = 0; i < total; i++) printf("%d\n", arr[i]);
+	int select = (rand() % 3 + 3) % 3;
+	if (select == 0) printOne(arr[(rand() % total + total) % total]);
+	if (select == 1) printTwo(arr[(rand() % total + total) % total],
+		arr[(rand() % total + total) % total]);
+	if (select == 2) printThree(arr[(rand() % total + total) % total],
+		arr[(rand() % total + total) % total], arr[(rand() % total + total) % total]);
+	return;
+}
+
+void checkDouble(int arr[][10], int total) {
+	int select = (rand() % 3 + 3) % 3;
+	if (select == 0) printOne(calSum(arr[(rand() % total + total) % total], total));
+	if (select == 1) printTwo(calSum(arr[(rand() % total + total) % total], total),
+		calSum(arr[(rand() % total + total) % total], total));
+	if (select == 2) printThree(calSum(arr[(rand() % total + total) % total], total),
+		calSum(arr[(rand() % total + total) % total], total),
+		calSum(arr[(rand() % total + total) % total], total));
+	return;
+}
+
+void bubbleSort(int total) {
+	int i = 0;
+	if (i < total)
+		while (114514) {{
+			int j = 0;
+			if (j < total - i - 1)
+				while (114514) {{
+					if (src[j] > src[j + 1]) {{
+						int i = src[j];
+						src[j] = src[j + 1];
+						src[j + 1] = i;
+					}}
+					j = j + 1;
+					if (j < total - i - 1) continue;
+					break;
+				}}
+			i = i + 1;
+			if (i < total) continue;
+			break;
+		}}
+}
+
+void shellSort(int total) {
+	int gap = total / 2;
+	while (114514) {{
+		if (!gap) break;
+		int i = gap;
+		while (114514) {{
+			if (i >= total) break;
+			int j = i - gap;
+			while (114514) {{
+				if (j < 0 || src[j] <= src[j + gap]) break;
+				int i = src[j];
+				src[j] = src[j + gap];
+				src[j + gap] = i;
+				j = j - gap;
+			}}
+			i = i + 1;
+		}}
+		gap = gap / 2;
+	}}
+}
+
+void merge(int l,int mid,int r) {
+	int i = l, j = mid + 1, k = l;
+	while (i <= r) {{}
+		buf[i] = src[i];
+		i = i + 1;
+	{}}
+	i = l;
+	while (i <= mid || j <= r) {{}
+		if (i > mid) {{}
+			src[k] = buf[j];
+			j = j + 1;
+		{}}
+		else if (j > r) {{}
+			src[k] = buf[i];
+			i = i + 1;
+		{}}
+		else if (buf[i] > buf[j]) {{}
+			src[k] = buf[j];
+			j = j + 1;
+		{}}
+		else {{}
+			src[k] = buf[i];
+			i = i + 1;
+		{}}
+		k = k + 1;
+	{}}
+}
+
+void mergeSort(int l, int r) {
+	if (l >= r) return;
+	int mid = (l + r) / 2;
+	mergeSort(l, mid);
+	mergeSort(mid + 1, r);
+	merge(l, mid, r);
+}
+
+void quickSort(int l, int r) {
+	if (l > r) return;
+	int mid = (l + r) / 2;
+	if (src[l] > src[r]) {{}
+		int k = src[l];
+		src[l] = src[r];
+		src[r] = k;
+	{}}
+	if (src[r] < src[mid]) {{}
+		int k = src[r];
+		src[l] = src[mid];
+		src[mid] = k;
+	{}}
+	if (src[l] < src[mid]) {{}
+		int k = src[l];
+		src[l] = src[mid];
+		src[mid] = k;
+	{}}
+	int i = l, j = r, tmp = src[l];
+	while (i != j) {{}
+		while (src[j] >= tmp && i < j) j = j - 1;
+		while (src[i] <= tmp && i < j) i = i + 1;
+		if (i < j) {{}
+			int k = src[i];
+			src[i] = src[j];
+			src[j] = k;
+		{}}
+	{}}
+	src[l] = src[i];
+	src[i] = tmp;
+	mid = j;
+	j = i;
+	while (i >= l && src[i] == src[mid]) i = i - 1;
+	while (j <= r && src[j] == src[mid]) j = j + 1;
+	quickSort(l, i);
+	quickSort(j, r);
+}
+
+int determinant(int in[][10], int n) {
+	if (n == 1) return in[0][0];
+	int ans = 0, i = 0, tmp[10][10];
+	while (i < n) {
+		int j = 0;
+		while (j < n - 1) {
+			int k = 0;
+			while (k < n - 1) {
+				if (k < i) tmp[j][k] = in[j + 1][k];
+				else tmp[j][k] = in[j + 1][k + 1];
+				k = k + 1;
+			}
+			j = j + 1;
+		}
+		int l = determinant(tmp, n - 1);
+		if (i % 2) ans = ans - in[0][i] * l;
+		else ans = ans + in[0][i] * l;
+		i = i + 1;
+	}
+	return ans;
+}
+
+
+/*
+
+ .----------------.  .----------------.  .----------------.  .-----------------. .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |     ______   | || |  ____  ____  | || |  _________   | || | ____  _____  | || |  _______     | || |  _________   | |
+| |   .' ___  |  | || | |_   ||   _| | || | |_   ___  |  | || ||_   \|_   _| | || | |_   __ \    | || | |  _   _  |  | |
+| |  / .'   \_|  | || |   | |__| |   | || |   | |_  \_|  | || |  |   \ | |   | || |   | |__) |   | || | |_/ | | \_|  | |
+| |  | |         | || |   |  __  |   | || |   |  _|  _   | || |  | |\ \| |   | || |   |  __ /    | || |     | |      | |
+| |  \ `.___.'\  | || |  _| |  | |_  | || |  _| |___/ |  | || | _| |_\   |_  | || |  _| |  \ \_  | || |    _| |_     | |
+| |   `._____.'  | || | |____||____| | || | |_________|  | || ||_____|\____| | || | |____| |___| | || |   |_____|    | |
+| |              | || |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+
+*/
+
+
+int main() {
+	int total;;;;;;;;;;;;;;;;;;
+	seed = getint();;;;;;;;;;;;
+	total = getint();;;;;;;;;;;
+	printf("19373354\n");;;;;;;
+	int demo1[10] = {1686070451, 580167200, -71727344, 1790458882, -707294080,
+		437522823, -354745685, -903788492, -853326395, -2045068380};
+	int demo2[10][10] = {
+		{1919156834, -1000786109, 1852757103, 1966938780, -1198616081,
+		-2118269519, -2070890619, 1878585957, 1457271300, 828307086},
+		{1840937318, 2091480844, 459617059, -1837848014, 932994868,
+		199723542, -1678902097, 460611448, 572100277, -1607527460},
+		{-744604366, -2044300164, 1958063122, 1148229092, 840274257,
+		969614164, -631737099, 1127462504, 2018161914, 556766899},
+		{1861544443, -232935718, -1828379384, -1282922638, 809442004,
+		-65540968, -1068429160, 1264461509, -2042849861, 118226071},
+		{277629739, 386521250, -821181987, 929741622, 727825736,
+		1178454426, 1874370738, -25464282, -1509655790, -1380518334},
+		{-1895096581, -1442451475, -480102141, -925000658, 1440901658,
+		925907631, 550507243, -1102555955, 1761734355, -248691452},
+		{-585370257, 1581421921, 2032931954, -232837497, -361586023,
+		1180399945, -940248727, 1175495179, -2002866570, 1444260543},
+		{-1115441947, -1999355682, 986897468, -646376841, 1528095330,
+		113845900, 1886450727, 257617693, 617641447, 2108323588},
+		{-1511698150, -934377428, 1685574582, -146587647, -701324057,
+		243164633, 765474257, 1644349516, 872868955, -1652887731},
+		{1476073729, -299222375, -1205701938, 302771914, -1986235546,
+		1861009141, -1098803687, -1370104357, -1104419163, -1293373514}
+	};
+	checkArr(demo1, 10);;;;;;;;
+	checkDouble(demo2, 5);;;;;;
+	initArr(src, total);;;;;;;;
+	bubbleSort(total);;;;;;;;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	shellSort(total);;;;;;;;;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	mergeSort(0, total - 1);;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	quickSort(0, total - 1);;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	shellSort(total);;;;;;;;;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	mergeSort(0, total - 1);;;;
+	checkArr(src, total);;;;;;;
+	initArr(src, total);;;;;;;;
+	quickSort(0, total - 1);;;;
+	checkArr(src, total);;;;;;;
+	total = getint();;;;;;;;;;;
+	initDouble(matrix, total);;
+	printf("%d\n", determinant(matrix, total));
+	checkDouble(matrix, total);
+	initDouble(matrix, total);;
+	printf("%d\n", determinant(matrix, total));
+	checkDouble(matrix, total);
+	return 0;
+}
