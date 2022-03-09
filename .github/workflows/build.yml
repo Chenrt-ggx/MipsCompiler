@@ -1,0 +1,41 @@
+name: Build and Release
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-release:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: setup jdk 8
+              uses: actions/setup-java@v2
+              with:
+                  java-version: "8"
+                  distribution: "temurin"
+            - name: compile
+              run: find . -name '*.java' | xargs javac
+            - name: pack
+              run: find . -name '*.class' | xargs jar cvmf META-INF/MANIFEST.MF Compiler.jar
+            - name: create release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: Release
+                  release_name: YuGeCompiler
+                  draft: false
+                  prerelease: false
+            - name: upload release
+              id: upload_release
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./Compiler.jar
+                  asset_name: Compiler.jar
+                  asset_content_type: application/jar

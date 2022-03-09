@@ -1,5 +1,7 @@
 # Yu Ge Compiler
 
+[![Build and Release](https://github.com/Chenrt-ggx/MipsCompiler/actions/workflows/build.yml/badge.svg)](https://github.com/Chenrt-ggx/MipsCompiler/actions/workflows/build.yml)
+
 - Chenrt SysY Compiler (CSC)
 - A Tiny Compiler Written In Java-8
 - Translates SysY Language Into MIPS Assembly
